@@ -12,17 +12,44 @@ html {
     font-size: 60px;
 }
 
-.shade-list-display {
+.team-container {
+    font-family: Century Gothic, sans-serif;
+    font-size: 20px;
+    align-items: center;
     display: flex;
-    flex-direction: row;
-    padding-top: 2em;
+    flex-direction: column;
 }
 
-.team {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+.list {
+    position: absolute;
+    opacity: 0;
+    text-align: center;
+}
+
+table {
+    height: 400px;
+    width: 400px;
+}
+
+th {
+    background-color: black;
+    color: white;
+}
+
+td {
+    background-color: white;
+}
+
+.team-container:hover .list {
+    opacity: 1;
+    transition: 1s ease-out;
+}
+
+.team-id {
     font-size: 50px;
 }
 
+/* For shade data pages */
 .name {
     font-size: 50px;
     font-family: Century Gothic, sans-serif;
@@ -56,13 +83,13 @@ html {
 }
 
 .abilities {
-    padding: 10px;
+    padding: 15px 10px 15px 10px;
     font-family: Century Gothic, sans-serif;
+    font-size: 15px;
 }
 
 .signature {
-    padding: 10px;
-    font-size: 1.5em;
-    font-family: Century Gothic, sans-serif;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 2em rgb(69. 69. 69);
     color: white;
 }
