@@ -1,3 +1,19 @@
+/*Fade in animation functions and tests*/
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(400px) scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+/* END OF TESTS*/
+
 html {
     background-color: gray;
 }
@@ -8,6 +24,10 @@ html {
 }
 
 .header {
+    display: flex;
+}
+
+.page-title {
     font-family: Century Gothic, sans-serif;
     font-size: 60px;
 }
@@ -54,12 +74,18 @@ td {
     font-size: 50px;
     font-family: Century Gothic, sans-serif;
     text-align: center;
+    animation: fade-up 0.5s;
+}
+
+.image {
+    animation: fade-up 1s;
 }
 
 .desc {
     padding: 10px;
     font-family: Century Gothic, sans-serif;
     text-align: center;
+    animation: fade-up 1s;
 }
 
 .content {
@@ -80,6 +106,7 @@ td {
     box-shadow: 0 0 2em rgb(69. 69. 69);
     color: white;
     align-self: center;
+    animation: fade-up 1s;
 }
 
 .abilities {
@@ -92,4 +119,39 @@ td {
     background-color: rgba(0, 0, 0, 0.7);
     box-shadow: 0 0 2em rgb(69. 69. 69);
     color: white;
+    animation: fade-up 1s;
+}
+
+.summons {
+    padding: 10px;
+    animation: fade-up 1s;
+}
+
+/* For summons ages */
+.stat-block {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 2em rgb(69. 69. 69);
+    width: 60%;
+    align-self: center;
+}
+
+.image-and-stats {
+    display: flex;
+}
+
+.image-and-stats .image {
+    align-self: flex-start;
+}
+
+.image-and-stats .name {
+    color: white;
+}
+
+.stats {
+    font-family: Century Gothic, sans-serif;
+    font-size: 15px;
+    color: white;
+    align-self: right;
 }
