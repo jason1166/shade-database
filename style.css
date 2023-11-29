@@ -125,6 +125,8 @@ td {
 .summons {
     padding: 10px;
     animation: fade-up 1s;
+    display: flex;
+    justify-content: space-between;
 }
 
 /* For summons pages */
@@ -165,6 +167,10 @@ td {
     font-size: 15px;
     color: white;
     align-items: center;
+}
+
+.summon-image {
+    margin: 5px;
 }
 
 figcaption {
