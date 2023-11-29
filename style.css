@@ -127,31 +127,50 @@ td {
     animation: fade-up 1s;
 }
 
-/* For summons ages */
+/* For summons pages */
 .stat-block {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.7);
     box-shadow: 0 0 2em rgb(69. 69. 69);
     width: 60%;
+    align-self: center; */
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 2em rgb(69, 69, 69);
+    color: white;
     align-self: center;
+    padding: 10px;
 }
 
 .image-and-stats {
     display: flex;
+    flex-direction: column;
 }
 
 .image-and-stats .image {
-    align-self: flex-start;
+    align-self: center;
 }
 
 .image-and-stats .name {
     color: white;
+    font-size: 40px;
+    margin-bottom: 20px;
 }
 
 .stats {
     font-family: Century Gothic, sans-serif;
     font-size: 15px;
     color: white;
-    align-self: right;
+    align-items: center;
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
 }
