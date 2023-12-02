@@ -1,9 +1,7 @@
-/*Fade in animation functions and tests*/
-
 @keyframes fade-up {
     0% {
         opacity: 0;
-        transform: translateY(400px) scale(0.9);
+        transform: translateY(0px) scale(0.9);
     }
 
     100% {
@@ -12,7 +10,10 @@
     }
 }
 
-/* END OF TESTS*/
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
 
 html {
     background-color: gray;
@@ -46,18 +47,14 @@ html {
     text-align: center;
 }
 
-.shade-list {
-    height: 400px;
-    width: 400px;
-}
-
-.team-shade {
-    background-color: white;
-}
-
 .team-container:hover .list {
     opacity: 1;
     transition: 1s ease-out;
+}
+
+.shade-list {
+    height: 400px;
+    width: 400px;
 }
 
 .team-id {
@@ -66,13 +63,31 @@ html {
     color: white;
 }
 
+.team-shade {
+    background-color: white;
+    color: black;
+}
+
 /* For shade data pages */
 .name {
     font-size: 50px;
-    /* font-family: Century Gothic, sans-serif; */
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    animation: fade-up 0.5s;
+    margin: 10px auto;
+    display: grid;
+    place-items: center;
+    max-width: fit-content;
+}
+
+.typed {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing;
+    animation-duration: 2s;
+    animation-timing-function: steps(30, end);
+    animation-fill-mode: forwards;
+    animation: typing 2s steps(20,end) forwards;
 }
 
 .image {
@@ -81,20 +96,16 @@ html {
 
 .desc {
     padding: 10px;
-    /* font-family: Century Gothic, sans-serif; */
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     animation: fade-up 1s;
     font-size: 15px;
 }
 
-.content { /*consider merging with .homepage*/
+.content {
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-.homepage .content {
+    align-items: center;    
     flex-direction: row;
     justify-content: center;
 }
@@ -122,9 +133,6 @@ html {
 .ability-list {
     display: flex;
     flex-direction: column;
-    /* background-color: rgba(0, 0, 0, 0.7);
-    box-shadow: 0 0 2em rgb(69. 69. 69);
-    color: white; */
     align-self: center;
     animation: fade-up 1s;
     width: 80%;
@@ -132,7 +140,6 @@ html {
 
 .abilities {
     padding: 15px 10px 15px 10px;
-    /* font-family: Century Gothic, sans-serif; */
     font-family: 'Courier New', Courier, monospace;
     font-size: 18px;
 }
@@ -145,7 +152,6 @@ html {
 }
 
 .skill-title, .signature-text {
-    /* font-family: Century Gothic, sans-serif; */
     font-family: 'Courier New', Courier, monospace;
     color: white;
     padding-left: 10px;
@@ -162,13 +168,6 @@ html {
     font-size: 18px;
 }
 
-.summons {
-    padding: 10px;
-    animation: fade-up 1s;
-    display: flex;
-    justify-content: space-between;
-}
-
 /* For summons pages */
 .stat-block {
     display: flex;
@@ -178,7 +177,8 @@ html {
     box-shadow: 0 0 2em rgb(69, 69, 69);
     color: white;
     align-self: center;
-    padding: 10px;
+    padding: 40px;
+    border: 2px solid white;
 }
 
 .image-and-stats {
@@ -197,7 +197,6 @@ html {
 }
 
 .stats {
-    /* font-family: Century Gothic, sans-serif; */
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
     color: white;
@@ -211,14 +210,4 @@ html {
 .summon-list {
     color: white;
     text-decoration: none;
-}
-
-figcaption {
-    background-color: #222;
-    color: #fff;
-    /* font: italic smaller sans-serif; */
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 15px;
-    padding: 3px;
-    text-align: center;
 }
