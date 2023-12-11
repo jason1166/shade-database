@@ -211,3 +211,29 @@ html {
     color: white;
     text-decoration: none;
 }
+
+/* Rules Pages */
+dt {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+dd {
+    margin-bottom: 15px;
+}
+
+.hunter-skill {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+
+.hunter-skill .title {
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.instruments .data-container {
+    justify-content: flex-start;
+}
