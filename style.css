@@ -33,12 +33,21 @@ html {
     font-size: 60px;
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    flex-direction: row;
+    justify-content: center;
+}
+
 .team-container {
     font-family: Century Gothic, sans-serif;
     font-size: 20px;
     align-items: center;
     display: flex;
     flex-direction: column;
+    animation:  fade-up 1s;
 }
 
 .list {
@@ -68,7 +77,7 @@ html {
     color: black;
 }
 
-/* For shade data pages */
+/* Shade data pages */
 .name {
     font-size: 50px;
     font-family: 'Courier New', Courier, monospace;
@@ -82,32 +91,13 @@ html {
 .typed {
     overflow: hidden;
     white-space: nowrap;
+    font-weight: bold;
     width: 0;
     animation: typing;
     animation-duration: 2s;
     animation-timing-function: steps(30, end);
     animation-fill-mode: forwards;
     animation: typing 2s steps(20,end) forwards;
-}
-
-.image {
-    animation: fade-up 1s;
-}
-
-.desc {
-    padding: 10px;
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
-    animation: fade-up 1s;
-    font-size: 15px;
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
-    flex-direction: row;
-    justify-content: center;
 }
 
 .data-container {
@@ -120,7 +110,11 @@ html {
     animation: fade-up 1s;
     margin: 10px auto; 
     padding: 40px;
-    border: solid 2px white;
+    border: solid 8px white;
+    border-top-left-radius: 37px 140px;
+    border-top-right-radius: 23px 130px;
+    border-bottom-left-radius: 110px 19px;
+    border-bottom-right-radius: 120px 24px;
 }
 
 .image-description-container {
@@ -128,6 +122,18 @@ html {
     flex-direction: column;
     align-items: center;
     margin: 40px;
+}
+
+.image {
+    animation: fade-up 1s;
+}
+
+.desc {
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    animation: fade-up 1s;
+    font-size: 15px;
 }
 
 .ability-list {
@@ -168,7 +174,7 @@ html {
     font-size: 18px;
 }
 
-/* For summons pages */
+/* Summons pages */
 .stat-block {
     display: flex;
     justify-content: center;
@@ -223,12 +229,12 @@ dd {
     margin-bottom: 15px;
 }
 
-.hunter-skill {
+.hunter-skill, .instruments {
     font-family: 'Courier New', Courier, monospace;
     font-size: 18px;
 }
 
-.hunter-skill .title {
+.hunter-skill .title, .instruments .title {
     font-family: 'Courier New', Courier, monospace;
     text-decoration: underline;
     font-weight: bold;
@@ -236,4 +242,38 @@ dd {
 
 .instruments .data-container {
     justify-content: flex-start;
+}
+
+/* Shades menu pages */
+.menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+figcaption {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+}
+
+.menu-image {
+    margin: 20px;
+    transition-duration: 1s;
+}
+
+.menu-image:hover {
+    box-shadow: 12px 16px 5px rgba(0, 0, 0, 0.24),0 17px 50px 5px rgba(0, 0, 0, 0.24);
+}
+
+.team-shade-container {
+    animation: fade-up 1s;
+}
+
+.team-shade-container .name {
+    font-weight: bold;
+    margin-top: 50px;
 }
