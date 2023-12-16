@@ -28,9 +28,15 @@ html {
     display: flex;
 }
 
+@font-face {
+    font-family: Library3AM;
+    src: url(Library\ 3\ am.otf);
+}
+
 .page-title {
-    font-family: Century Gothic, sans-serif;
+    font-family: Library3AM;
     font-size: 60px;
+    padding: 5px;
 }
 
 .content {
