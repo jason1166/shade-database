@@ -29,3 +29,28 @@ span.onclick = () => {
 modal.onclick = () => {
   modal.style.display = "none";
 };
+
+//bad practice bandaid fix for dreams situation (mend in future)
+const img2 = document.getElementById("shade-image-2");
+
+img2.onclick = function () {
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+};
+
+const img3 = document.getElementById("shade-image-3");
+
+img3.onclick = function () {
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+};
+
+const img4 = document.getElementById("shade-image-4");
+
+img4.onclick = function () {
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+};
