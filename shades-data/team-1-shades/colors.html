@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="../../style.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <script src="../../script.js" defer></script>
     <title>Shade of Colors</title>
   </head>
   <body>
@@ -38,7 +39,9 @@
           <div>
             <img
               src="../../images/shade-colors.png"
-              class="image shade-image"
+              class="image"
+              id="shade-image"
+              alt="Shade of Colors"
               height="400px"
               width="400px"
             />
@@ -238,6 +241,19 @@
           </div>
         </div>
       </div>
+    </div>
+    <div id="myModal" class="modal">
+      <!-- Close button -->
+      <span class="close">&times;</span>
+      <!-- Modal Content -->
+      <img
+        src="../../images/shade-death.png"
+        alt="Death"
+        class="modal-content"
+        id="img01"
+      />
+      <!-- Modal Image caption -->
+      <div id="caption"></div>
     </div>
   </body>
 </html>

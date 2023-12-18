@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="../../style.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <script src="../../script.js" defer></script>
     <title>Shade of Dreams</title>
   </head>
   <body>
@@ -35,32 +36,74 @@
       <div class="name">SHADE OF DREAMS</div>
       <div class="content">
         <div class="image-description-container">
-          <div>
-            <img
-              src="../../images/shade-dreams.jpg"
-              class="image shade-image"
-              height="400px"
-              width="400px"
-            />
-          </div>
-          <div class="desc">
-            <ul style="text-align: left">
-              <li>
-                A disembodied floating cloud that appears differently to
-                everyone depending on the person. Is generally a very
-                enthusiastic and optimistic mind, keeping a cheery attitude no
-                matter what the circumstance. Has a childlike attitude of
-                hopefulness.
-              </li>
-              <li>
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 4</div>
+              <img
+                src="../../images/shade-dreams-1.png"
+                class="image"
+                id="shade-image"
+                alt="Shade of Dreams 1st Form"
+                height="400px"
+                width="400px"
+              />
+              <div class="desc caption-text">                
+                A disembodied floating cloud that appears differently to everyone 
+                depending on the person. Is generally a very enthusiastic and 
+                optimistic mind, keeping a cheery attitude no matter what the 
+                circumstance. Has a childlike attitude of hopefulness.
+              </div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 4</div>
+              <img
+                src="../../images/shade-dreams-2.png"
+                class="image"
+                id="shade-image"
+                alt="Shade of Dreams 2nd Form"
+                height="600px"
+                width="400px"
+              />
+              <div class="desc caption-text">                
                 A disembodied floating eldritch horror with six arms. Is very
                 vague and cryptic in its speech, and exudes an ominous
                 personality, but seems helpful when it needs to be. It seems to
                 be keeping some cards behind its hand
-              </li>
-              <li>Mickey</li>
-              <li>Goofy</li>
-            </ul>
+              </div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 4</div>
+              <img
+                src="../../images/shade-dreams-3.png"
+                class="image"
+                id="shade-image"
+                alt="Shade of Dreams 3rd Form"
+                height="600px"
+                width="400px"
+              />
+              <div class="desc caption-text">Mickey</div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">4 / 4</div>
+              <img
+                src="../../images/shade-dreams-4.jpg"
+                class="image"
+                id="shade-image"
+                alt="Shade of Dreams 4th Form"
+                height="400px"
+                width="400px"
+              />
+              <div class="desc caption-text">Goofy</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+            <a class="next" onclick="plusSlides(1)">&#10095</a>
+          </div>
+          <br>
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
           </div>
           <div style="margin-top: 20px" class="abilities">Host: Neru</div>
           <div>
@@ -210,5 +253,52 @@
         </div>
       </div>
     </div>
+    <div id="myModal" class="modal">
+      <!-- Close button -->
+      <span class="close">&times;</span>
+      <!-- Modal Content -->
+      <img
+        src="../../images/shade-death.png"
+        alt="Death"
+        class="modal-content"
+        id="img01"
+      />
+      <!-- Modal Image caption -->
+      <div id="caption"></div>
+    </div>
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        const slides = document.getElementsByClassName("mySlides");
+        const dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
   </body>
 </html>
