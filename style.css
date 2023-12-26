@@ -349,8 +349,11 @@ body {
 }
 
 .summon-list {
-  color: aqua;
   text-decoration: none;
+}
+
+.summon-list:hover {
+  background-color: hsl(0, 0%, 60%);
 }
 
 /* Rules Pages */
