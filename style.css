@@ -13,7 +13,7 @@
 }
 
 html {
-  background-color: #181b25;
+  background-color: hsl(226, 21%, 12%);
 }
 
 body {
@@ -163,6 +163,11 @@ body {
 }
 
 @media only screen and (max-width: 1080px) {
+  .nav-bar {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
   .data-container {
     flex-wrap: wrap;
   }
