@@ -70,3 +70,22 @@ function closeNav() {
   document.getElementById("sidebarBtn").style.display = "block";
   document.getElementById("homepage").style.marginLeft = "0";
 }
+
+function openDeath() {
+  document.getElementById("deathShade").style.display = "block";
+  document.getElementById("colorShade").style.display = "none";
+}
+
+function openColor() {
+  document.getElementById("deathShade").style.display = "none";
+  document.getElementById("colorShade").style.display = "block";
+}
+
+function openList() {
+  let dropdownContent = document.getElementById("teamlist");
+  if (dropdownContent.style.display == "block") {
+    dropdownContent.style.display = "none";
+  } else {
+    dropdownContent.style.display = "block";
+  }
+}

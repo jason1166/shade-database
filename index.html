@@ -20,6 +20,15 @@
       <a href="#" onclick="closeNav()">Services</a>
       <a href="#">Clients</a>
       <a href="#">Contact</a>
+      <a href="#" onclick="closeNav();openDeath()">Death</a>
+      <a href="#" onclick="closeNav();openColor()">Color</a>
+      <button class="dropdown-btn" onclick="openList()"> 1
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container" id="teamlist">
+        <a href="#" onclick="closeNav();openDeath()">Death</a>
+        <a href="#" onclick="closeNav();openColor()">Color</a>
+      </div>
     </div>
 
     
@@ -38,7 +47,339 @@
       </div>
 
       <div class="content">
-        <div w3-include-html="shades-data/team-2-shades/death.html"></div>
+        <div class="data-container" id="deathShade" style="display: none;">
+          <div class="name">SHADE OF DEATH</div>
+          <div class="content">
+            <div class="image-description-container">
+              <div>
+                <img
+                  src="../../images/shade-death.png"
+                  class="image"
+                  id="shade-image"
+                  alt="Shade of Death"
+                  height="400px"
+                  width="400px"
+                />
+              </div>
+              <div class="desc">
+                Resembles an expressionless, dark-shrouded creature. Within its dark
+                shroud, it can produce hands that when touched, will drain the
+                target of its life force and spirit.
+              </div>
+              <div style="margin-top: 20px" class="abilities">Host: Grimm</div>
+              <div>
+                <img
+                  src="../../images/player-grimm.png"
+                  class="image player-image"
+                  width="200px"
+                  height="200px"
+                />
+              </div>
+            </div>
+            <div class="skill-signature-container">
+              <div class="ability-list">
+                <div class="skill-title">SKILLS</div>
+                <div class="abilities" style="padding-top: 0px">
+                  <table>
+                    <tr>
+                      <th style="text-align: left; font-size: 20px">
+                        Touch of Necrosis [4SP/ATK]
+                      </th>
+                    </tr>
+                    <tr>
+                      <td>
+                        When successfully landing an attack on a creature, if they
+                        are below half of their HP maximum, they take additional
+                        damage equal to your proficiency bonus. If this attack were
+                        to defeat a creature, you regain temp HP equal to a quarter
+                        of the damage dealt.
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="abilities">
+                  <table>
+                    <tr>
+                      <th style="text-align: left; font-size: 20px">
+                        PASSIVE: Scent of Death
+                      </th>
+                    </tr>
+                    <tr>
+                      <td>
+                        Shade of Death is able to accurately discern the time of
+                        death of any deceased creature when touching any parts of
+                        its body. Additionally, Shade of Death can detect any
+                        creatures close to death i;e below half their maximum HP
+                        within 400ft.
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="abilities">
+                  <table>
+                    <tr>
+                      <th style="text-align: left; font-size: 20px">
+                        PASSIVE: Life as my Currency
+                      </th>
+                    </tr>
+                    <tr>
+                      <td>
+                        When the host character is drained of SP, the host character
+                        HP is instead supplemented as the SP, and is converted to SP
+                        to prevent SP drain effects.
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="signature">
+                <div class="skill-title">SIGNATURE</div>
+                <div class="signature-text">
+                  <table>
+                    <tr>
+                      <th style="text-align: left; font-size: 20px">
+                        神さえも死を恐れる: Even Gods Fear Death [9SP/9HP per Round]
+                      </th>
+                    </tr>
+                    <tr>
+                      <td>
+                        As a bonus action, you physically manifest
+                        <a
+                          href="../../summons/death-summon.html"
+                          onclick="basicPopup(this.href);return false"
+                        >
+                          <span
+                            class="summon-list"
+                            style="
+                              font-weight: bold;
+                              font-size: 22px;
+                              text-decoration: none;
+                            "
+                            >Shade of Death</span
+                          ></a
+                        >. It follows the ASI of your base character and takes it
+                        turn right after the host characters turn. When Shade of
+                        Death is summoned, the host character can no longer regain
+                        SPIRIT, and when SPIRIT is drained, the host character can
+                        choose to consume HP instead, at a 1 for 1 HP to SP ratio.
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="data-container" id="colorShade" style="display: none;">
+      <div class="name">SHADE OF COLORS</div>
+      <div class="content">
+        <div class="image-description-container">
+          <div>
+            <img
+              src="../../images/shade-colors.png"
+              class="image"
+              id="shade-image"
+              alt="Shade of Colors"
+              height="400px"
+              width="400px"
+            />
+          </div>
+          <div class="desc">
+            A barely imperceptible colored-speck that exists around the host
+            character. The color permeates an aura around the host, which
+            rapidly change color when they use their shade technique. A shade
+            that holds unspeakable power despite its simplicity, Shade of Colors
+            is able to manipulate the properties and states of the matter around
+            it.
+          </div>
+          <div style="margin-top: 20px" class="abilities">Host: Sojo</div>
+          <div>
+            <img
+              src="../../images/player-sojo.jpg"
+              class="image player-image"
+              height="200px"
+              width="200px"
+            />
+          </div>
+        </div>
+        <div class="skill-signature-container">
+          <div class="ability-list">
+            <div class="skill-title">SKILLS</div>
+            <div class="abilities" style="padding-top: 0px">
+              <table>
+                <tr>
+                  <th style="text-align: left; font-size: 20px">
+                    Energy Color Shift: Red [6SP/Round]
+                  </th>
+                </tr>
+                <tr>
+                  <td>
+                    When touching an object, you can rapidly displace or add
+                    energy to it. For example, producing a fireball by holding a
+                    lit flame and rapidly adding heat energy to it, or rapidly
+                    taking away gravitational potential energy from an object,
+                    preventing it from falling momentarily as it gathers it's
+                    potential energy again. This technique is heavily SPIRIT
+                    intensive, costing 6 SPIRIT per 6 seconds a technique is
+                    active. Additionally, as a bonus action, you can add
+                    additional magical damage to a spell cast equal to 1/5 of
+                    SPIRIT used.
+                    <br /><br />
+
+                    As a bonus action, you can add red into ONE INSTANCE of the
+                    effect of a spell or a cantrip that you cast in the same
+                    turn. (Ala, scorching ray is 3 rays, but only 1 ray has
+                    red). When using red, the spell or cantrip will target the
+                    enemy using it's Spirit DEF stat rather than its AC if it's
+                    an attack roll. Red also allows the spell or cantrip to
+                    ignore cover and line of sight, as well as extending the
+                    range of the ability by 30 ft. By expending another 3SP for
+                    a total of 9SP, you can enhance the effect of red on the
+                    spell/cantrip and deal an additional d10 damage, and you can
+                    change the damage type of the ray to any damage type (except
+                    true).
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="abilities">
+              <table>
+                <tr>
+                  <th style="text-align: left; font-size: 20px">
+                    Substance Color Shift: Blue [6SP/Round]
+                  </th>
+                </tr>
+                <tr>
+                  <td>
+                    By rapidly shifting energy and SPIRIT, the host can
+                    transmute simple materials, such as a simple block of wood,
+                    carbon etc. Additionally, by consuming an exorbitant amount
+                    of SPIRIT, the host may attempt to transmute away solid
+                    objects, but the rate at which is extremely slow and SPIRIT
+                    inefficient. The more complex the object, the more SPIRIT it
+                    takes.
+                    <br /><br />
+                    As a bonus action, you can add blue into ONE INSTANCE of the
+                    effect of a spell or a cantrip that you cast in the same
+                    turn. (Ala, scorching ray is 3 rays, but only 1 ray has
+                    red). When using blue, you are able to delay the casting and
+                    activation of spells and cantrips, storing the spell and
+                    cantrip within an item, surface, object or materialise the
+                    spell/cantrip as a barely physical blue orb. The spell will
+                    automatically trigger when the object or surface is
+                    destroyed, and if not, they are automatically casted at the
+                    start of your next turn. By expending another 3SP for a
+                    total of 9SP, you can enhance the effect of blue on the
+                    spell/cantrip to deal an additional d10 damage and ignores
+                    resistances.
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="abilities">
+              <table>
+                <tr>
+                  <th style="text-align: left; font-size: 20px">
+                    Spirit Colour Shift: Yellow
+                  </th>
+                </tr>
+                <tr>
+                  <td>
+                    Encapsulates the flow of Spirit energy in the world and it's
+                    creatures. Yellow rapidly shifts and manipulates the Spirit
+                    of creatures, essentially bending it's will and it's life
+                    force. As a passive, you regenerate 1SP at the start of your
+                    turn.
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="signature">
+            <div class="skill-title">SIGNATURE</div>
+            <div class="signature-text">
+              <table>
+                <tr>
+                  <th style="text-align: left; font-size: 20px">
+                    Tsveta mira, Slit'sya V Odin: Colors of the World, Blend
+                    into One
+                  </th>
+                </tr>
+                <tr>
+                  <td style="text-align: left; font-size: 20px">
+                    <strong>Matter Color Shift: Purple [20SP]</strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    As an action, the host character picks a simple object no
+                    bigger than the palm of his hand, the object is rapidly
+                    compressed and charged with energy by Color Shift Blue and
+                    Color Shift Red. The object slowly becomes a glowing purple
+                    orb which can be launched at any target within 400ft. Every
+                    creature the orb passes, make an attack roll against the
+                    creature. The orb will punch through any simple physical
+                    barriers and deals (2 + proficiency bonus)d10 kinetic damage
+                    to any creature successfully hit by the orb. Every creature
+                    successfully hit by the attack will be debuffed with one of
+                    TWO debuffs:
+                    <ul>
+                      <li>
+                        Red: Creature is unable to move until the end of their
+                        next turn, as their energy is rapidly sapped away.
+                      </li>
+                      <li>
+                        Blue: Creatures physical armor and resistances is
+                        rapidly deconstructed. Creature cannot benefit from
+                        resistances until the end of their next turn.
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    style="text-align: left; font-size: 20px; margin-top: 20px"
+                  >
+                    <strong>Potential Color Shift: Lime Green [22 SP]</strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    As a main action, by fusing Blue and Yellow together,
+                    rapidly shifting Spirit and Energy into the hosts body. The
+                    host becomes charged with massive amounts of energy and
+                    Spirit before letting it release as multiple streams of
+                    emerald green lightning blasts at an enemy. All creatures
+                    within a 60ft cone will make a DEX save, on a successful
+                    save they take half. Creatures will take damage equal to
+                    (2+PB) d12 psychic damage, as this energy rends at the
+                    Spirit and their Energy. Creatures who fail the save for
+                    this ability will be unable to regain SPIRIT until the end
+                    of their next turn.
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    style="text-align: left; font-size: 20px; margin-top: 20px"
+                  >
+                    <strong>Color Shift: Citrus Orange [14SP]</strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    As a reaction, when you were to be downed by a single
+                    instance of damage, you instead revert back to shalf of your
+                    maximum HP and full SP. By fusing Red and Yellow together,
+                    you can rapidly regenerate your energy and spirit to prevent
+                    a fatal demise.
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>
       </div>
       
       <!-- <div class="content">
