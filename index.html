@@ -9,21 +9,39 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="script.js"></script>
     <title>Shades</title>
   </head>
   <body>
-    <div class="homepage">
+    <!--experiment-->
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">About</a>
+      <a href="#" onclick="closeNav()">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>
+
+    
+
+    <div id="homepage">
       <div class="header">
         <div class="page-title">
+          <button class="openbtn" id="sidebarBtn" onclick="openNav()">&#9776;</button>
           <a href="index.html" style="text-decoration: none">Shades</a>
         </div>
-        <ul class="nav-bar">
+        <!-- <ul class="nav-bar">
           <li><a href="game-info/hunter-skills.html">Skills</a></li>
           <li><a href="game-info/hunter-instruments.html">Instruments</a></li>
           <li><a href="shades-menu.html">Shades</a></li>
-        </ul>
+        </ul> -->
       </div>
+
       <div class="content">
+        <div w3-include-html="shades-data/team-2-shades/death.html"></div>
+      </div>
+      
+      <!-- <div class="content">
         <div class="team-icon-container">
           <div class="team-container">
             <img
@@ -126,7 +144,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </body>
 </html>
