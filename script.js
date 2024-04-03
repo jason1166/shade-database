@@ -54,3 +54,38 @@ img4.onclick = function () {
   modalImg.src = this.src;
   captionText.innerHTML = this.alt;
 };
+
+
+/*Siderbar experiment*/
+/* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("sidebarBtn").style.display = "none";
+  document.getElementById("homepage").style.marginLeft = "250px";
+}
+
+/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("sidebarBtn").style.display = "block";
+  document.getElementById("homepage").style.marginLeft = "0";
+}
+
+function openDeath() {
+  document.getElementById("deathShade").style.display = "block";
+  document.getElementById("colorShade").style.display = "none";
+}
+
+function openColor() {
+  document.getElementById("deathShade").style.display = "none";
+  document.getElementById("colorShade").style.display = "block";
+}
+
+function openList() {
+  let dropdownContent = document.getElementById("teamlist");
+  if (dropdownContent.style.display == "block") {
+    dropdownContent.style.display = "none";
+  } else {
+    dropdownContent.style.display = "block";
+  }
+}
