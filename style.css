@@ -20,19 +20,19 @@ body {
   font-family: "Inter";
 }
 
-#homepage {
+#main {
   display: flex;
   flex-direction: column;
   position: relative;
+  background-color: hsl(226, 21%, 12%);
 }
 
-.header {
+#header {
   display: flex;
   width: 100%;
   top: 0;
   right: 0;
   z-index: 1000;
-  /* position: fixed; */
   align-items: center;
   justify-content: space-between;
 }
@@ -562,7 +562,6 @@ figcaption {
 .sidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-family: 'Times New Roman', Times, serif;
   font-size: 25px;
   color: #818181;
   display: block;
@@ -602,14 +601,18 @@ figcaption {
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #homepage {
-  transition: margin-left .5s; /* If you want a transition effect */
+  transition: margin-left 0.5s; /* If you want a transition effect */
   padding: 20px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
 }
 
 .dropdown-btn {
@@ -620,14 +623,15 @@ figcaption {
   display: block;
   border: none;
   background: none;
-  width:100%;
+  width: 100%;
   text-align: left;
   cursor: pointer;
   outline: none;
 }
 
 /* On mouse-over */
-.sidebar a:hover, .dropdown-btn:hover {
+.sidebar a:hover,
+.dropdown-btn:hover {
   color: #f1f1f1;
 }
 
@@ -636,12 +640,6 @@ figcaption {
   margin-left: 200px; /* Same as the width of the sidenav */
   font-size: 20px; /* Increased text to enable scrolling */
   padding: 0px 10px;
-}
-
-/* Add an active class to the active dropdown button */
-.active {
-  background-color: green;
-  color: white;
 }
 
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
@@ -655,4 +653,35 @@ figcaption {
 .fa-caret-down {
   float: right;
   padding-right: 8px;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #f1f1f1;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+#content {
+  padding: 0 18px;
+  background-color: #000000;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.skill-tab {
+  padding-bottom: 40px;
 }

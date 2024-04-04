@@ -5,158 +5,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="../../style.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-    <script src="../../script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../../script.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <title>Shade of Death</title>
   </head>
   <body>
-    <div class="header">
-      <div class="page-title">
-        <a href="../../index.html" style="text-decoration: none">Shades</a>
-      </div>
-      <ul class="nav-bar">
-        <li><a href="../../game-info/hunter-skills.html">Skills</a></li>
-        <li>
-          <a href="../../game-info/hunter-instruments.html">Instruments</a>
-        </li>
-        <li><a href="../../shades-menu.html">Shades</a></li>
-      </ul>
+    <div id="sidebar" class="sidebar">
+      <!--sidebar here-->
     </div>
 
-    <div class="data-container">
-      <div class="name">SHADE OF DEATH</div>
-      <div class="content">
-        <div class="image-description-container">
-          <div>
-            <img
-              src="../../images/shade-death.png"
-              class="image"
-              id="shade-image"
-              alt="Shade of Death"
-              height="400px"
-              width="400px"
-            />
-          </div>
-          <div class="desc">
-            Resembles an expressionless, dark-shrouded creature. Within its dark
-            shroud, it can produce hands that when touched, will drain the
-            target of its life force and spirit.
-          </div>
-          <div style="margin-top: 20px" class="abilities">Host: Grimm</div>
-          <div>
-            <img
-              src="../../images/player-grimm.png"
-              class="image player-image"
-              width="200px"
-              height="200px"
-            />
+    <div id="main">
+      <div id="header">
+        <!--Header content here-->
+      </div>
+
+      <div class="data-container">
+        <div class="skill-tab">
+          <button type="button" class="collapsible">PASSIVE: Touch of Necrosis</button>
+          <div id="content">
+            <p>When doing damage to creatures (spell saves/attacks) below half of their HP maximum, they take additional damage equal to your proficiency bonus. You regain HP equal to a quarter of the damage dealt. Additionally Shade of Death also benefits from this passive when he is summoned</p>
           </div>
         </div>
-        <div class="skill-signature-container">
-          <div class="ability-list">
-            <div class="skill-title">SKILLS</div>
-            <div class="abilities" style="padding-top: 0px">
-              <table>
-                <tr>
-                  <th style="text-align: left; font-size: 20px">
-                    Touch of Necrosis [4SP/ATK]
-                  </th>
-                </tr>
-                <tr>
-                  <td>
-                    When successfully landing an attack on a creature, if they
-                    are below half of their HP maximum, they take additional
-                    damage equal to your proficiency bonus. If this attack were
-                    to defeat a creature, you regain temp HP equal to a quarter
-                    of the damage dealt.
-                  </td>
-                </tr>
-              </table>
-            </div>
-            <div class="abilities">
-              <table>
-                <tr>
-                  <th style="text-align: left; font-size: 20px">
-                    PASSIVE: Scent of Death
-                  </th>
-                </tr>
-                <tr>
-                  <td>
-                    Shade of Death is able to accurately discern the time of
-                    death of any deceased creature when touching any parts of
-                    its body. Additionally, Shade of Death can detect any
-                    creatures close to death i;e below half their maximum HP
-                    within 400ft.
-                  </td>
-                </tr>
-              </table>
-            </div>
-            <div class="abilities">
-              <table>
-                <tr>
-                  <th style="text-align: left; font-size: 20px">
-                    PASSIVE: Life as my Currency
-                  </th>
-                </tr>
-                <tr>
-                  <td>
-                    When the host character is drained of SP, the host character
-                    HP is instead supplemented as the SP, and is converted to SP
-                    to prevent SP drain effects.
-                  </td>
-                </tr>
-              </table>
-            </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible">PASSIVE: Scent of Death</button>
+          <div id="content">
+            <p>Shade of Death is able to accurately discern the time of death of any deceased creature when touching any parts of its body. Additionally, Shade of Death can detect any creatures close to death i;e below half their maximum HP within 400ft.</p>
           </div>
-          <div class="signature">
-            <div class="skill-title">SIGNATURE</div>
-            <div class="signature-text">
-              <table>
-                <tr>
-                  <th style="text-align: left; font-size: 20px">
-                    神さえも死を恐れる: Even Gods Fear Death [9SP/9HP per Round]
-                  </th>
-                </tr>
-                <tr>
-                  <td>
-                    As a bonus action, you physically manifest
-                    <a
-                      href="../../summons/death-summon.html"
-                      onclick="basicPopup(this.href);return false"
-                    >
-                      <span
-                        class="summon-list"
-                        style="
-                          font-weight: bold;
-                          font-size: 22px;
-                          text-decoration: none;
-                        "
-                        >Shade of Death</span
-                      ></a
-                    >. It follows the ASI of your base character and takes it
-                    turn right after the host characters turn. When Shade of
-                    Death is summoned, the host character can no longer regain
-                    SPIRIT, and when SPIRIT is drained, the host character can
-                    choose to consume HP instead, at a 1 for 1 HP to SP ratio.
-                  </td>
-                </tr>
-              </table>
-            </div>
+        </div>
+        
+        <div class="skill-tab">
+          <button type="button" class="collapsible">PASSIVE: Life as my Currency</button>
+          <div id="content">
+            <p>When the host character is drained of SP, the host character HP is instead supplemented as the SP, and is converted to SP to prevent SP drain effects.</p>
           </div>
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible">SIGNATURE: EVEN GODS FEAR DEATH</button>
+          <div id="content">
+            <p>As a bonus action, you physically manifest
+              <a href="https://jason1166.github.io/shade-database/summons/death-summon.html" onclick="basicPopup(this.href);return false">
+                <span class="summon-list" style="font-weight: bold; font-size: 22px; text-decoration: none;">Shade of Death</span></a
+              >. It follows the ASI of your base character and takes it
+              turn right after the host characters turn. When Shade of
+              Death is summoned, the host character can no longer regain
+              SPIRIT, and when SPIRIT is drained, the host character can
+              choose to consume HP instead, at a 1 for 1 HP to SP ratio.</p>
+          </div>
+        </div>
+
+        <div>
+          <div style="margin-top: 20px" class="abilities">Host: Grimm</div>
+          <img
+            src="../../images/player-grimm.png"
+            class="image player-image"
+            height="200px"
+            width="200px"
+          />
         </div>
       </div>
     </div>
-    <div id="myModal" class="modal">
-      <!-- Close button -->
-      <span class="close">&times;</span>
-      <!-- Modal Content -->
-      <img
-        src="../../images/shade-death.png"
-        alt="Death"
-        class="modal-content"
-        id="img01"
-      />
-      <!-- Modal Image caption -->
-      <div id="caption"></div>
-    </div>
+
+    <script>
+      $("#header").load("../../components/header.html");
+      $("#sidebar").load("../../components/sidebar.html");
+
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
   </body>
 </html>

@@ -8,84 +8,73 @@ function basicPopup(url) {
 }
 
 //Opening and closing Modal Images
-const modal = document.getElementById("myModal");
+// const modal = document.getElementById("myModal");
 
-const img = document.getElementById("shade-image");
+// const img = document.getElementById("shade-image");
 
-const modalImg = document.getElementById("img01");
-const captionText = document.getElementById("caption");
-img.onclick = function () {
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-};
+// const modalImg = document.getElementById("img01");
+// const captionText = document.getElementById("caption");
+// img.onclick = function () {
+//   modal.style.display = "block";
+//   modalImg.src = this.src;
+//   captionText.innerHTML = this.alt;
+// };
 
-const span = document.getElementsByClassName("close")[0];
+// const span = document.getElementsByClassName("close")[0];
 
-span.onclick = () => {
-  modal.style.display = "none";
-};
+// span.onclick = () => {
+//   modal.style.display = "none";
+// };
 
-modal.onclick = () => {
-  modal.style.display = "none";
-};
-
-//bad practice bandaid fix for dreams situation (mend in future)
-const img2 = document.getElementById("shade-image-2");
-
-img2.onclick = function () {
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-};
-
-const img3 = document.getElementById("shade-image-3");
-
-img3.onclick = function () {
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-};
-
-const img4 = document.getElementById("shade-image-4");
-
-img4.onclick = function () {
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-};
-
+// modal.onclick = () => {
+//   modal.style.display = "none";
+// };
 
 /*Siderbar experiment*/
 /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
 function openNav() {
-  document.getElementById("mySidebar").style.width = "250px";
-  document.getElementById("sidebarBtn").style.display = "none";
-  document.getElementById("homepage").style.marginLeft = "250px";
+  $("#mySidebar").css("width", "250px");
+  $("#sidebar-btn").css("display", "none");
+  $("#main").css("margin-left", "250px");
 }
 
-/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
 function closeNav() {
-  document.getElementById("mySidebar").style.width = "0";
-  document.getElementById("sidebarBtn").style.display = "block";
-  document.getElementById("homepage").style.marginLeft = "0";
+  $("#mySidebar").css("width", "0");
+  $("#sidebar-btn").css("display", "block");
+  $("#main").css("margin-left", "0");
 }
 
-function openDeath() {
-  document.getElementById("deathShade").style.display = "block";
-  document.getElementById("colorShade").style.display = "none";
-}
+function openList1() {
+  let team1DropDown = document.getElementById("team1List");
 
-function openColor() {
-  document.getElementById("deathShade").style.display = "none";
-  document.getElementById("colorShade").style.display = "block";
-}
-
-function openList() {
-  let dropdownContent = document.getElementById("teamlist");
-  if (dropdownContent.style.display == "block") {
-    dropdownContent.style.display = "none";
+  if (team1DropDown.style.display == "block") {
+    team1DropDown.style.display = "none";
   } else {
-    dropdownContent.style.display = "block";
+    team1DropDown.style.display = "block";
   }
+}
+
+function openList2() {
+  let team2DropDown = document.getElementById("team2List");
+
+  if (team2DropDown.style.display == "block") {
+    team2DropDown.style.display = "none";
+  } else {
+    team2DropDown.style.display = "block";
+  }
+}
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = document.getElementById("content");
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
 }
