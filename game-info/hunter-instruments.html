@@ -3,106 +3,138 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link rel="stylesheet" type="text/css" href="../../style.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../../script.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <title>Hunter Instruments</title>
   </head>
   <body>
-    <div class="header">
-      <div class="page-title">
-        <a href="../index.html" style="text-decoration: none">Shades</a>
-      </div>
-      <ul class="nav-bar">
-        <li><a href="hunter-skills.html">Skills</a></li>
-        <li>
-          <a href="hunter-instruments.html">Instruments</a>
-        </li>
-        <li><a href="../shades-menu.html">Shades</a></li>
-      </ul>
+    <div id="sidebar" class="sidebar">
+      <!--sidebar here-->
     </div>
-    <div class="instruments">
-      <div class="data-container">
-        <dl>
-          <dt>
-            <h2 class="title" style="text-decoration: none">Grade 6</h2>
-          </dt>
-          <dt>Omamori Ward</dt>
-          <dd>
-            A Shade's first ability or first attack against you will have a -2
-            to land or a +2 to your save. However, afterwards the Omamori Ward
-            will lose all of its color and become shriveled. The ward can be
-            reblessed by a priest during a long rest to regain its usage.
-          </dd>
-          <dt>Holy Water</dt>
-          <dd>
-            Any items doused in holy water will incur SPIRIT damage to a shade,
-            dealing 1 damage and stinging the touch of the Shade. The searing
-            pain may be enough for a Shade to retreat from an object.
-          </dd>
-        </dl>
+
+    <div id="main">
+      <div id="header">
+        <!--Header content here-->
       </div>
+
       <div class="data-container">
-        <dl>
-          <dt>
-            <h2 class="title" style="text-decoration: none">Grade 5</h2>
-          </dt>
-          <dt>Babylon's Scarf [DEX14]</dt>
-          <dd>
-            A scarf made from fibres extracted from the intestinal lining of a
-            rare beetle in Persia. The scarf can be manipulated by imbuement of
-            SPIRIT. Any user can freely control the movement of the scarf as
-            long as one part of their body is still touching the scarf.
-            Additionally, since it can be imbued with SPIRIT, you can make an
-            improvised attack against any creature within 15ft, reducing SPIRIT
-            by 1d4.
-          </dd>
-          <dt>Mistwine</dt>
-          <dd>
-            A roll of thread that when imbued with SPIRIT energy, rapidly turns
-            into vision-obscuring mist. The mist can span up to 40ft radius and
-            heavily obscures vision. Action or BA, spreads 10ft per round,
-            reforms after 1 min.
-          </dd>
-          <dt>Bleed [STR14/DEX14]</dt>
-          <dd>
-            A serrated knife that is able to inflict deep cuts into both Shades
-            and mortals alike. When doing this damage with this weapon, you may
-            pick between doing physical damage to them or reducing their SPIRIT.
-            This knife using the dagger statblock, dealing 1d4+STR/DEX.
-            Additionally when this weapon crits, the knife will incur both the
-            SPIRIT reduction and the physical damage.
-          </dd>
-          <dt>Simple Blessing [STR14/DEX14]</dt>
-          <dd>
-            Can be added to any weapon. This weapon additionally reduces 1d4+2
-            SPIRIT on successful hits.
-          </dd>
-        </dl>
-      </div>
-      <div class="data-container">
-        <dl>
-          <dt>
-            <h2 class="title" style="text-decoration: none">Grade 3</h2>
-          </dt>
-          <dt>Masamune</dt>
-          <dd>
-            +1 to attack rolls and damage rolls 2d6 magical piercing damage. On
-            a a critical hit, the enemy must make a DC13 WIS save or become
-            unable to use SP until the end of their next turn.
-          </dd>
-          <dt>Pharact's Hand</dt>
-          <dd>??</dd>
-        </dl>
-      </div>
-      <div class="data-container" style="text-align: left">
-        <dl>
-          <dt>
-            <h2 class="title" style="text-decoration: none">Grade 2</h2>
-          </dt>
-          <dt>Mind Abyssal Doll</dt>
-          <dd>??</dd>
-        </dl>
+        <div class="name">
+          HUNTER INSTRUMENTS
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Grade 6</button>
+          <div id="skill-content">
+            <ul class="info-content">
+              <li>Lesser Simple Blessing (STR14/DEX14):<br> 
+                  Applicable to any weapon, this weapon additionally reduces SPIRIT by 1d4 on successful hits.
+              </li>
+              <li>
+                Omamori Ward:<br>
+                A Shade's first ability or first attack against you will have a -2 to land or a +2 to your save. However, afterwards the Omamori Ward will lose all of its color and become shriveled. The ward can be reblessed by a priest during a long rest to regain its usage.
+              </li>
+              <li>
+                Holy Water:<br> 
+                Any items doused in holy water will incur SPIRIT damage to a shade, dealing 1 damage and stinging the touch of the Shade. The searing pain may be enough for a Shade to retreat from an object.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Grade 5</button>
+          <div id="skill-content">
+            <ul class="info-content">
+              <li>Babylon's Scarf (DEX14): <br> 
+                A scarf made from fibres extracted from the intestinal lining of a rare beetle in Persia. The scarf can be manipulated by imbuement of SPIRIT. Any user can freely control the movement of the scarf as long as one part of their body is still touching the scarf. Additionally, since it can be imbued with SPIRIT, you can make an improvised attack against any creature within 15ft, reducing SPIRIT by 1d4.
+              </li>
+              <li>
+                Mistwine:<br>
+                A roll of thread that when imbued with SPIRIT energy, rapidly turns into vision-obscuring mist. The mist can span up to 40ft radius and heavily obscures vision. Action or BA, spreads 10ft per round, reforms after 1 min.
+              </li>
+              <li>
+                Bleed (STR14/DEX14):<br> 
+                A serrated knife that is able to inflict deep cuts into both Shades and mortals alike. When doing this damage with this weapon, you may pick between doing physical damage to them or reducing their SPIRIT. This knife using the dagger statblock, dealing 1d4+STR/DEX. Additionally when this weapon crits, the knife will incur both the SPIRIT reduction and the physical damage.
+              </li>
+              <li>
+                Simple Blessing (STR14/DEX14):<br>
+                Can be added to any weapon. This weapon additionally reduces 1d4+2 SPIRIT on successful hits.
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Grade 3</button>
+          <div id="skill-content">
+            <ul class="info-content">
+              <li>Masamune: <br> 
+                +1 to attack rolls and damage rolls 2d6 magical piercing damage. On a a critical hit, the enemy must make a DC13 WIS save or become unable to use SP until the end of their next turn.
+              </li>
+              <li>
+                Pharact's Hand:<br>
+                ???
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Grade 3</button>
+          <div id="skill-content">
+            <ul class="info-content">
+              <li>Mind Abyssal Doll: <br> 
+                ???
+              </li>
+            </ul>
+          </div>
+        </div>
+
       </div>
     </div>
+
+    <script>
+      $("#header").load("../../components/header.html");
+      $("#sidebar").load("../../components/sidebar.html");
+
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
   </body>
 </html>

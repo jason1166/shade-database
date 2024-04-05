@@ -7,29 +7,6 @@ function basicPopup(url) {
   );
 }
 
-//Opening and closing Modal Images
-// const modal = document.getElementById("myModal");
-
-// const img = document.getElementById("shade-image");
-
-// const modalImg = document.getElementById("img01");
-// const captionText = document.getElementById("caption");
-// img.onclick = function () {
-//   modal.style.display = "block";
-//   modalImg.src = this.src;
-//   captionText.innerHTML = this.alt;
-// };
-
-// const span = document.getElementsByClassName("close")[0];
-
-// span.onclick = () => {
-//   modal.style.display = "none";
-// };
-
-// modal.onclick = () => {
-//   modal.style.display = "none";
-// };
-
 /*Siderbar experiment*/
 /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
 function openNav() {
@@ -62,19 +39,4 @@ function openList2() {
   } else {
     team2DropDown.style.display = "block";
   }
-}
-
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = document.getElementById("content");
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
 }

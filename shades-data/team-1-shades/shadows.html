@@ -5,202 +5,151 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="../../style.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-    <script src="../../script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../../script.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <title>Shade of Shadows</title>
   </head>
   <body>
-    <div class="header">
-      <div class="page-title">
-        <a href="../../index.html" style="text-decoration: none">Shades</a>
-      </div>
-      <ul class="nav-bar">
-        <li><a href="../../game-info/hunter-skills.html">Skills</a></li>
-        <li>
-          <a href="../../game-info/hunter-instruments.html">Instruments</a>
-        </li>
-        <li><a href="../../shades-menu.html">Shades</a></li>
-      </ul>
+    <div id="sidebar" class="sidebar">
+      <!--sidebar here-->
     </div>
 
-    <div class="data-container">
-      <div class="name">SHADE OF SHADOWS</div>
-      <div class="content">
-        <div class="image-description-container">
-          <div>
-            <img
-              src="../../images/shade-shadows.png"
-              class="image"
-              id="shade-image"
-              alt="Shade of Shadows"
-              height="600px"
-              width="400px"
-            />
-          </div>
-          <div class="desc">
-            A six-eyed demon-like creature that thrives in Izaya's shadow, its
-            true form is never revealed, but when it speaks, it sounds like an
-            echoing version of Izaya's voice. When standing in the dark,
-            creatures in the room with Izaya can sense an overbearing presence
-            all around them.
-          </div>
-          <div style="margin-top: 20px" class="abilities">Host: Izaya</div>
-          <div>
-            <img
-              src="../../images/player-izaya.jpg"
-              class="image player-image"
-              height="200px"
-              width="200px"
-            />
+    <div id="main">
+      <div id="header">
+        <!--Header content here-->
+      </div>
+
+      <div class="data-container">
+        <div class="name">
+          SHADE OF SHADOWS
+        </div>
+
+        <div class="desc">
+          A six-eyed demon-like creature that thrives in Izaya's shadow, its true form is never revealed, but when it speaks, it sounds like an echoing version of Izaya's voice. When standing in the dark, creatures in the room with Izaya can sense an overbearing presence all around them.
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Shadow Manipulation (4SP)</button>
+          <div id="skill-content">
+            <p>Shade of Shadows can manipulate all manners of shadows and darkness it touches, being able to bend it to its will to any shape or form it wants. However, the shadow is just that, and is not able to interact with anything physically. Shade of Shadows is able to detach momentarily from its host, traveling alongside darkness undetected, and can do so up to 90ft away from the host as long as it stays within the shadows and no light is shed on it. If light is shed on the Shade, it is instantly banished back to its host, and the host reduces by 8 SPIRIT. 
+            </p>
           </div>
         </div>
-        <div class="skill-signature-container">
-          <div class="ability-list">
-            <div class="skill-title">SKILLS</div>
-            <div class="abilities" style="padding-top: 0px">
-              <table>
-                <tr>
-                  <th style="text-align: left; font-size: 20px">
-                    Shadow Manipulation [4SP]
-                  </th>
-                </tr>
-                <tr>
-                  <td>
-                    Shade of Shadows can manipulate all manners of shadows and
-                    darkness it touches, being able to bend it to its will to
-                    any shape or form it wants. However, the shadow is just
-                    that, and is not able to interact with anything physically.
-                    Shade of Shadows is able to detach momentarily from its
-                    host, traveling alongside darkness undetected, and can do so
-                    up to 90ft away from the host as long as it stays within the
-                    shadows and no light is shed on it. If light is shed on the
-                    Shade, it is instantly banished back to its host, and the
-                    host reduces by 8 SPIRIT.
-                  </td>
-                </tr>
-              </table>
-            </div>
-            <div class="abilities">
-              <table>
-                <tr>
-                  <th style="text-align: left; font-size: 20px">
-                    PASSIVE: Infinite Abyss
-                  </th>
-                </tr>
-                <tr>
-                  <td>
-                    Shade of Shadows is able to hold any inanimte object, but
-                    the weight of said object will be endured by the host
-                    character. In the event that the weight is too much, the
-                    user will be crushed under the weight of his own shadow.
-                    When the host is knocked unconscious, all the objects will
-                    spill from the shadow.
-                  </td>
-                </tr>
-              </table>
-            </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">PASSIVE: Infinite Abyss</button>
+          <div id="skill-content">
+            <p>Shade of Shadows is able to hold any inanimate object, but the weight of said object will be endured by the host character. In the event that the weight is too much, the user will be crushed under the weight of his own shadow. When the host is knocked unconscious, all the objects will spill from the shadow.
+              </p>
           </div>
-          <div class="signature">
-            <div class="skill-title">SIGNATURE</div>
-            <div class="signature-text">
-              <table>
-                <tr>
-                  <th style="text-align: left; font-size: 20px">
-                    Sýndarbrúða: Manifest Puppet
-                  </th>
-                </tr>
-                <tr>
-                  <td>
-                    Unlike other Shade Signatures, this signature can be used
-                    multiple times. However, once a Puppet is killed, it can no
-                    longer be summoned until a long rest. As an Action, the host
-                    can summon shadowy creatures to its aid. Each creature has a
-                    different SPIRIT upkeep and casting cost. All creatures
-                    assume the ability scores of its host. The creatures will
-                    take their turns independently. An Action can be used to
-                    summon up to TWO puppets and a Bonus Action can be used to
-                    summon ONE
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    Available Summons:
-                    <ul>
-                      <li>
-                        <a
-                          href="../../summons/penumbral-stalker.html"
-                          onclick="basicPopup(this.href);return false"
-                          class="summon-list"
-                          ><span style="font-weight: bold; font-size: 22px"
-                            >Penumbral Stalker</span
-                          ></a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="../../summons/aves.html"
-                          onclick="basicPopup(this,href);return false"
-                          class="summon-list"
-                          ><span style="font-weight: bold; font-size: 22px"
-                            >Aves</span
-                          ></a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="../../summons/mink.html"
-                          onclick="basicPopup(this.href);return false"
-                          class="summon-list"
-                          ><span style="font-weight: bold; font-size: 22px"
-                            >Abyssal Mink</span
-                          ></a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href="../../summons/onychophora.html"
-                          onclick="basicPopup(this.href);return false"
-                          class="summon-list"
-                          ><span style="font-weight: bold; font-size: 22px"
-                            >Slothful Onychophora</span
-                          ></a
-                        >
-                      </li>
-                    </ul>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="text-align: left; font-size: 20px">
-                    <strong
-                      >Delayed Vanishing [Summoning SP cost/Reaction]</strong
-                    >
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    Using a host reaction, if a summon were to perish, it can
-                    instead fall to 1HP instead. Each summon can only be
-                    preserved like this once per summoning. Penumbral Stalker
-                    can proc this ability three times.
-                  </td>
-                </tr>
-              </table>
-            </div>
+        </div>
+
+        <div class="signature-label">
+          SHADE SIGNATURE
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Sýndarbrúða: Manifest Puppet: </button>
+          <div id="skill-content">
+            <p>Unlike other Shade Signatures, this signature can be used multiple times. However, once a Puppet is killed, it can no longer be summoned until a long rest. As an Action, the host can summon shadowy creatures to its aid. Each creature has a different SPIRIT upkeep and casting cost. All creatures assume the ability scores of its host. The creatures will take their turns independently. An Action can be used to summon up to TWO puppets and a Bonus Action can be used to summon ONE 
+              Puppets
+              <br><br>
+              Current Summons include:
+              <br>
+              <a
+                href="../../summons/penumbral-stalker.html"
+                onclick="basicPopup(this.href);return false"
+                class="summon-list">
+                <span style="font-weight: bold; font-size: 22px">Penumbral Stalker<br></span>
+              </a>
+              <a
+                href="../../summons/aves.html"
+                onclick="basicPopup(this.href);return false"
+                class="summon-list">
+                <span style="font-weight: bold; font-size: 22px">Aves<br></span>
+              </a>
+              <a
+                href="../../summons/mink.html"
+                onclick="basicPopup(this.href);return false"
+                class="summon-list">
+                <span style="font-weight: bold; font-size: 22px">Abyssal Mink <br></span>
+              </a>
+              <a
+                href="../../summons/onychophora.html"
+                onclick="basicPopup(this.href);return false"
+                class="summon-list">
+                <span style="font-weight: bold; font-size: 22px">Slothful Onychophora <br></span>
+              </a>
+              <a
+                href="../../summons/onychophora.html"
+                onclick="basicPopup(this.href);return false"
+                class="summon-list">
+                <span style="font-weight: bold; font-size: 22px">Twin Dark Serpent [In development] <br></span>
+              </a>
+            </p>
           </div>
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Delayed Vanishing (Summoning SP cost/ per reaction)</button>
+          <div id="skill-content">
+            <p>Using a host reaction, if a summon were to perish, it can instead fall to 1HP instead. Each summon can only be preserved like this once per summoning. Penumbral Stalker can proc this ability three times. 
+            </p>
+          </div>
+        </div>
+
+        <div style="align-self: center;">
+          <div style="margin-top: 20px" class="host-name">Host: Izaya</div>
+          <img
+            src="../../images/player-izaya.jpg"
+            class="image"
+            height="200px"
+            width="200px"
+          />
         </div>
       </div>
     </div>
-    <div id="myModal" class="modal">
-      <!-- Close button -->
-      <span class="close">&times;</span>
-      <!-- Modal Content -->
-      <img
-        src="../../images/shade-death.png"
-        alt="Death"
-        class="modal-content"
-        id="img01"
-      />
-      <!-- Modal Image caption -->
-      <div id="caption"></div>
-    </div>
+
+    <script>
+      $("#header").load("../../components/header.html");
+      $("#sidebar").load("../../components/sidebar.html");
+
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
   </body>
 </html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../../style.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../../script.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <title>Shade of Death</title>
+  </head>
+  <body>
+    <div id="sidebar" class="sidebar">
+      <!--sidebar here-->
+    </div>
+
+    <div id="main">
+      <div id="header">
+        <!--Header content here-->
+      </div>
+
+      <div class="data-container">
+        <div class="name">
+          HUNTER ARTS
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Tread Upon The Emotions of the Other Side</button>
+          <div id="skill-content">
+            <p>When using Other World's Sense as main action, your expertise in spirit senses allow you to effectively gauge the flowing spirit of characters around you As a main action, make a DC16 perception/insight check against a creature within line of sight and 60ft, on a success, you learn the creatures current amount of Spirit and HP
+            </p>
+          </div>
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Superior Rejuvenation of Body</button>
+          <div id="skill-content">
+            <p>It is now a free action to use Rejuvenate Body, maximum half cap is now removed. As a main action, you can also expend SP to Rejuvenate Body on targets other than yourselves if you can touch them. They heal HP according to your HP-SP ratio (martial/non-martial).</p>
+          </div>
+        </div>
+        
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Channeled Precision</button>
+          <div id="skill-content">
+            <p>
+                When using Channel Spirit, you can expend an additional 8SP to give the attack roll advantage, on a successful attack, half the damage of the attack is incurred as SPIRIT reducing damage. Cap on SP reductions is removed.</p>
+          </div>
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Everflowing Spirit Stream</button>
+          <div id="skill-content">
+            <p>By focusing and tapping into your inner SPIRIT, you start to let it flow throughout your system freely and into your blows. Channel Spirit is now a continuous effect. Once using  a bonus action, all consecutive attacks will consume 2SP each and have the Channel Spirit effect. After each Channel Spirit usage, the user gains +1 to attack rolls. This effect stacks up to a  maximum equivalent to your PB. The user may cancel the effect at any time.</p>
+          </div>
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Veil from the Banished</button>
+          <div id="skill-content">
+            <p> As a reaction, you can spend 2SP  to quickly veil yourself in a blank domain, expanding it to only cover the surface of your body. Any domain ability that should affect you is instead nullified one time. This feature can be used a number of times equal to half your PB rounded down
+            </p>
+          </div>
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Spiritually Enhanced Defense</button>
+          <div id="skill-content">
+            <p> You gain the ability to channel and manifest SPIRIT to shield yourself from physical attacks. As a reaction, you can reduce damage you receive from an attack by expending your SP, decreasing the damage by the amount of SP you expend up to half your maximum SP and increases the SPIRIT DEF by +1
+            </p>
+          </div>
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Exorcising Aura</button>
+          <div id="skill-content">
+            <p> 
+                As a main action, you can use your SPIRIT to ethereally manifest an exorcist circle expanding out from you. The exorcist circle cannot move, and the circle disappears when the Shade Hunter who casted is either SPIRIT drained or downed.</p>
+          </div>
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Compacted Domain Technique</button>
+          <div id="skill-content">
+            <p>When using a non-blank domain expansion, You can choose to create the domain at a much smaller space, condensing it but strengthening your authority over that space. The domain expansion will only be 10ft radius and will ignore the effects of the blank domains. The space where the compacted domain and another domain overlaps will become neutral, and neither domain expansions effects will register in that area. The domain can still be forcibly clashed with as a main action, however the compacted domain only needs to roll 3/4 of the rolled value. You can convert an active domain into a compacted one and vice versa with a main action</p>
+          </div>
+        </div>
+
+        <div class="skill-tab">
+            <button type="button" class="collapsible skill-title">Body Before the Soul</button>
+            <div id="skill-content">
+              <p> 
+                In dire moments of need, the sheer physicality of the hosts body is able to surpass what even the soul is capable of. When using Rejuvenate Body, it no longer consumes SP. Rather as a main action, you restore HP equal to your missing SP from your max SP. This effect is tripled for Martials.</p>
+            </div>
+        </div>
+
+        <div class="skill-tab">
+            <button type="button" class="collapsible skill-title">Naturally Otherworldly</button>
+            <div id="skill-content">
+              <p> 
+                Other Worlds Sense no longer costs SP and is a permanent effect on the host, after gaining enough proficiency in this ability, they are able to incorporate this sense into themselves naturally.</p>
+            </div>
+        </div>
+
+        <div class="skill-tab">
+            <button type="button" class="collapsible skill-title">Rapid Collapsing Domain</button>
+            <div id="skill-content">
+                <p> 
+                    When using a domain expansion, you can choose to hastily expand it but in an unstable manner. The domain's effects will apply as if the targets have been in the domain for one turn. The domain will quickly collapse afterwards, however, by expanding domain so quickly, the host expands the domain and resolves the effects of the domain FASTER than a domain clash can occur, bypassing a domain clash and a blank domains effects. 
+                </p>
+            </div>
+        </div>
+
+        <div class="skill-tab">
+            <button type="button" class="collapsible skill-title">Punishing Circle</button>
+            <div id="skill-content">
+                <p> 
+                    You spend 1 minute making the Punishing Circle, player can draw an exorcist circle that has a 60ft radius. Shades within the circle will have their existence slowly punished and judged. They have a -1 to attack rolls and AC. Additionally, for every round the Shade stays in the circle, they gain a -1 to SPIRT DEF, up to a maximum of -3.
+                </p>
+            </div>
+        </div>
+
+        <div class="skill-tab">
+            <button type="button" class="collapsible skill-title">Superior Martial Solution</button>
+            <div id="skill-content">
+                <p> 
+                    Adept with the ways of fighting in physical combat, by driving your physical prowess beyond the boundaries of the normal person, you have inadvertently enhanced your spiritual capabilities as well. You may only take this class if you have more than half your levels in a full martial class, (monk, fighter, barb) or have all your levels in a half martial class (paladin/ranger). Whenever you start your turn, you may use a free action to regenerate SP equal to your hit die, this can occur a number of times up to PB per long rest.
+                </p>
+            </div>
+        </div>
+
+        <div class="skill-tab">
+            <button type="button" class="collapsible skill-title">Clash Boundary Reinforcement</button>
+            <div id="skill-content">
+                <p> 
+                    Having expert understanding of domain clashes and how they work, you gain the uncanny ability to bolster your domains defenses the moment a domain clash occurs. When domain clashing, you may expend your reaction to Convert Spirit, utilizing up to two spell slots for the sake of the domain clash. Additionally, Convert Spirit can now use three spell slots when used as a regular free action on YOUR TURN.
+                </p>
+            </div>
+        </div>
+
+        <div class="skill-tab">
+            <button type="button" class="collapsible skill-title">Soul Before the Body</button>
+            <div id="skill-content">
+                <p> 
+                    In dire moments of need, your soul pushes the limits of your body even past what it is physically capable of, ordering it to move despite how broken it may be. When your character goes down, it instead expends all of your SP, with a minimum of 15SP. Instead of failing a death save and going down, the character instead regains HP equal to the SP expended. This can only occur once per rest
+                </p>
+            </div>
+        </div>
+
+        <div class="skill-tab">
+            <button type="button" class="collapsible skill-title">Refine Spirit</button>
+            <div id="skill-content">
+                <p> 
+                    Becoming an expert of flowing spirit, you gain the uncanny ability to convert your own SPIRIT back into spell slots and ki points. As a bonus action, you can refine spirit back into Ki /spell slots or some class features, you cannot use this action on a turn you use convert spell slots/ki to spirit on and vice versa.
+                    <br><br>
+                    5 SP converts into 1 Ki
+                    <br><br>
+                    3x the spell level SP converts into 1 spell slots
+                    <br><br>
+                    14 SP converts into Action Surge, Wildshape, Channel Divinity uses for those classes that have it.
+                    <br><br>
+                    You can refine a number of spirit equal to 2x your character level 
+
+                </p>
+            </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <script>
+      $("#header").load("../../components/header.html");
+      $("#sidebar").load("../../components/sidebar.html");
+
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

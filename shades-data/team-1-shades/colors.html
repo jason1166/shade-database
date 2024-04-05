@@ -5,245 +5,176 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="../../style.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-    <script src="../../script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../../script.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <title>Shade of Colors</title>
   </head>
   <body>
-    <div class="header">
-      <div class="page-title">
-        <a href="../../index.html" style="text-decoration: none">Shades</a>
-      </div>
-      <ul class="nav-bar">
-        <li><a href="../../game-info/hunter-skills.html">Skills</a></li>
-        <li>
-          <a href="../../game-info/hunter-instruments.html">Instruments</a>
-        </li>
-        <li><a href="../../shades-menu.html">Shades</a></li>
-      </ul>
+    <div id="sidebar" class="sidebar">
+      <!--sidebar here-->
     </div>
 
-    <div class="data-container">
-      <div class="name">SHADE OF COLORS</div>
-      <div class="content">
-        <div class="image-description-container">
-          <div>
-            <img
-              src="../../images/shade-colors.png"
-              class="image"
-              id="shade-image"
-              alt="Shade of Colors"
-              height="400px"
-              width="400px"
-            />
-          </div>
-          <div class="desc">
-            A barely imperceptible colored-speck that exists around the host
-            character. The color permeates an aura around the host, which
-            rapidly change color when they use their shade technique. A shade
-            that holds unspeakable power despite its simplicity, Shade of Colors
-            is able to manipulate the properties and states of the matter around
-            it.
-          </div>
-          <div style="margin-top: 20px" class="abilities">Host: Sojo</div>
-          <div>
-            <img
-              src="../../images/player-sojo.jpg"
-              class="image player-image"
-              height="200px"
-              width="200px"
-            />
+    <div id="main">
+      <div id="header">
+        <!--Header content here-->
+      </div>
+
+      <div class="data-container">
+        <div class="name">
+          SHADE OF COLORS
+        </div>
+
+        <div class="desc">
+          A barely imperceptible colored-speck that exists around the host character. The color permeates an aura around the host, which rapidly change color when they use their shade technique. A shade that holds unspeakable power despite its simplicity, Shade of Colors is able to manipulate the properties and states of the matter around it.
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Energy Color Shift: Red (6SP/Round)</button>
+          <div id="skill-content">
+            <p>When touching an object, you can rapidly displace or add energy to it. For example, producing a fireball by holding a lit flame and rapidly adding heat energy to it, or rapidly taking away gravitational potential energy from an object, preventing it from falling momentarily as it gathers it's potential energy again. This technique is heavily SPIRIT intensive, costing 6 SPIRIT per 6 seconds a technique is active. Additionally, as a bonus action, you can add additional magical damage to a spell cast equal to 1/5 of SPIRIT used. 
+                <br><br>
+              As a bonus action, you can add red into ONE INSTANCE of the effect of a spell or a cantrip that you cast in the same turn. (Ala, scorching ray is 3 rays, but only 1 ray has red). When using red, the spell or cantrip will target the enemy using it's Spirit DEF stat rather than its AC if it's an attack roll. Red also allows the spell or cantrip to ignore cover and line of sight, as well as extending the range of the ability by 30 ft. By expending another 3SP for a total of 9SP, you can enhance the effect of red on the spell/cantrip and deal an additional d10 damage, and you can change the damage type of the ray to any damage type (except true).
+            </p>
           </div>
         </div>
-        <div class="skill-signature-container">
-          <div class="ability-list">
-            <div class="skill-title">SKILLS</div>
-            <div class="abilities" style="padding-top: 0px">
-              <table>
-                <tr>
-                  <th style="text-align: left; font-size: 20px">
-                    Energy Color Shift: Red [6SP/Round]
-                  </th>
-                </tr>
-                <tr>
-                  <td>
-                    When touching an object, you can rapidly displace or add
-                    energy to it. For example, producing a fireball by holding a
-                    lit flame and rapidly adding heat energy to it, or rapidly
-                    taking away gravitational potential energy from an object,
-                    preventing it from falling momentarily as it gathers it's
-                    potential energy again. This technique is heavily SPIRIT
-                    intensive, costing 6 SPIRIT per 6 seconds a technique is
-                    active. Additionally, as a bonus action, you can add
-                    additional magical damage to a spell cast equal to 1/5 of
-                    SPIRIT used.
-                    <br /><br />
 
-                    As a bonus action, you can add red into ONE INSTANCE of the
-                    effect of a spell or a cantrip that you cast in the same
-                    turn. (Ala, scorching ray is 3 rays, but only 1 ray has
-                    red). When using red, the spell or cantrip will target the
-                    enemy using it's Spirit DEF stat rather than its AC if it's
-                    an attack roll. Red also allows the spell or cantrip to
-                    ignore cover and line of sight, as well as extending the
-                    range of the ability by 30 ft. By expending another 3SP for
-                    a total of 9SP, you can enhance the effect of red on the
-                    spell/cantrip and deal an additional d10 damage, and you can
-                    change the damage type of the ray to any damage type (except
-                    true).
-                  </td>
-                </tr>
-              </table>
-            </div>
-            <div class="abilities">
-              <table>
-                <tr>
-                  <th style="text-align: left; font-size: 20px">
-                    Substance Color Shift: Blue [6SP/Round]
-                  </th>
-                </tr>
-                <tr>
-                  <td>
-                    By rapidly shifting energy and SPIRIT, the host can
-                    transmute simple materials, such as a simple block of wood,
-                    carbon etc. Additionally, by consuming an exorbitant amount
-                    of SPIRIT, the host may attempt to transmute away solid
-                    objects, but the rate at which is extremely slow and SPIRIT
-                    inefficient. The more complex the object, the more SPIRIT it
-                    takes.
-                    <br /><br />
-                    As a bonus action, you can add blue into ONE INSTANCE of the
-                    effect of a spell or a cantrip that you cast in the same
-                    turn. (Ala, scorching ray is 3 rays, but only 1 ray has
-                    red). When using blue, you are able to delay the casting and
-                    activation of spells and cantrips, storing the spell and
-                    cantrip within an item, surface, object or materialise the
-                    spell/cantrip as a barely physical blue orb. The spell will
-                    automatically trigger when the object or surface is
-                    destroyed, and if not, they are automatically casted at the
-                    start of your next turn. By expending another 3SP for a
-                    total of 9SP, you can enhance the effect of blue on the
-                    spell/cantrip to deal an additional d10 damage and ignores
-                    resistances.
-                  </td>
-                </tr>
-              </table>
-            </div>
-            <div class="abilities">
-              <table>
-                <tr>
-                  <th style="text-align: left; font-size: 20px">
-                    Spirit Colour Shift: Yellow
-                  </th>
-                </tr>
-                <tr>
-                  <td>
-                    Encapsulates the flow of Spirit energy in the world and it's
-                    creatures. Yellow rapidly shifts and manipulates the Spirit
-                    of creatures, essentially bending it's will and it's life
-                    force. As a passive, you regenerate 1SP at the start of your
-                    turn.
-                  </td>
-                </tr>
-              </table>
-            </div>
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Substance Color Shift: Blue (6SP/Round)</button>
+          <div id="skill-content">
+            <p>By rapidly shifting energy and SPIRIT, the host can transmute simple materials, such as a simple block of wood, carbon etc. Additionally, by consuming an exorbitant amount of SPIRIT, the host may attempt to transmute away solid objects, but the rate at which is extremely slow and SPIRIT inefficient. The more complex the object, the more SPIRIT it takes.
+              <br><br>
+              As a bonus action, you can add blue into ONE INSTANCE of the effect of a spell or a cantrip that you cast in the same turn. (Ala, scorching ray is 3 rays, but only 1 ray has red). When using blue, you are able to delay the casting and activation of spells and cantrips, storing the spell and cantrip within an item, surface, object or materialise the spell/cantrip as a barely physical blue orb. The spell will automatically trigger when the object or surface is destroyed, and if not, they are automatically casted at the start of your next turn. By expending another 3SP for a total of 9SP, you can enhance the effect of blue on the spell/cantrip to deal an additional d10 damage and ignores resistances.
+            </p>
           </div>
-          <div class="signature">
-            <div class="skill-title">SIGNATURE</div>
-            <div class="signature-text">
-              <table>
-                <tr>
-                  <th style="text-align: left; font-size: 20px">
-                    Tsveta mira, Slit'sya V Odin: Colors of the World, Blend
-                    into One
-                  </th>
-                </tr>
-                <tr>
-                  <td style="text-align: left; font-size: 20px">
-                    <strong>Matter Color Shift: Purple [20SP]</strong>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    As an action, the host character picks a simple object no
-                    bigger than the palm of his hand, the object is rapidly
-                    compressed and charged with energy by Color Shift Blue and
-                    Color Shift Red. The object slowly becomes a glowing purple
-                    orb which can be launched at any target within 400ft. Every
-                    creature the orb passes, make an attack roll against the
-                    creature. The orb will punch through any simple physical
-                    barriers and deals (2 + proficiency bonus)d10 kinetic damage
-                    to any creature successfully hit by the orb. Every creature
-                    successfully hit by the attack will be debuffed with one of
-                    TWO debuffs:
-                    <ul>
-                      <li>
-                        Red: Creature is unable to move until the end of their
-                        next turn, as their energy is rapidly sapped away.
-                      </li>
-                      <li>
-                        Blue: Creatures physical armor and resistances is
-                        rapidly deconstructed. Creature cannot benefit from
-                        resistances until the end of their next turn.
-                      </li>
-                    </ul>
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    style="text-align: left; font-size: 20px; margin-top: 20px"
-                  >
-                    <strong>Potential Color Shift: Lime Green [22 SP]</strong>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    As a main action, by fusing Blue and Yellow together,
-                    rapidly shifting Spirit and Energy into the hosts body. The
-                    host becomes charged with massive amounts of energy and
-                    Spirit before letting it release as multiple streams of
-                    emerald green lightning blasts at an enemy. All creatures
-                    within a 60ft cone will make a DEX save, on a successful
-                    save they take half. Creatures will take damage equal to
-                    (2+PB) d12 psychic damage, as this energy rends at the
-                    Spirit and their Energy. Creatures who fail the save for
-                    this ability will be unable to regain SPIRIT until the end
-                    of their next turn.
-                  </td>
-                </tr>
-                <tr>
-                  <td
-                    style="text-align: left; font-size: 20px; margin-top: 20px"
-                  >
-                    <strong>Color Shift: Citrus Orange [14SP]</strong>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    As a reaction, when you were to be downed by a single
-                    instance of damage, you instead revert back to shalf of your
-                    maximum HP and full SP. By fusing Red and Yellow together,
-                    you can rapidly regenerate your energy and spirit to prevent
-                    a fatal demise.
-                  </td>
-                </tr>
-              </table>
-            </div>
+        </div>
+        
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Amplify: Aquamarine Blue (9SP)</button>
+          <div id="skill-content">
+            <p>As a  main action, you manifest and amplify an expression of blue into a blast of pure spirit and molecular matter. Target a range within 120ft, you throw your Amplified Blue, which will galvanize and transmute all matter within the area destructively, releasing a heavy blast of energy. Every creature within a 20ft radius of the centre of Amplified Blue must make a DEX save or take  5d6 + PBD6. This damage ignores resistances</p>
           </div>
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Amplify: Crimson Red (9SP)</button>
+          <div id="skill-content">
+            <p>As a  main action, you manifest and amplify an expression of red into a blast of pure spirit and energy. Target a creature within 120ft, you throw your Amplified Red towards them, a mass of immense spirit and energy. Make a spell attack roll against the creature, they take 2D10 + PBD10 damage, this damage can be any type you choose.</p>
+          </div>
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">PASSIVE: Spirit Colour Shift</button>
+          <div id="skill-content">
+            <p>Yellow encapsulates the flow of Spirit energy in the world and it's creatures. Yellow rapidly shifts and manipulates the Spirit of creatures, essentially bending it's will and it's life force. As a passive, you regenerate 1SP at the start of your turn.</p>
+          </div>
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">PASSIVE: Amplify: Golden Yellow</button>
+          <div id="skill-content">
+            <p>Golden Yellow has granted you near perfect control over your own spirit output, after a long rest, you can decrease SP costs of any of your abilities by up to 3x your PB, you can allocate the reductions however you want (decrease purple by 9/ decrease amp blue, red, purple by 3 each). Additionally, your maximum SP cap increases by 4.</p>
+          </div>
+        </div>
+        
+        <div class="signature-label">
+          SHADE SIGNATURE
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Matter Color Shift: Purple (20SP)</button>
+          <div id="skill-content">
+            <p>As an action, the host character picks a simple object no bigger than the palm of his hand, the object is rapidly compressed and charged with energy by Color Shift Blue and Color Shift Red. The object slowly becomes a glowing purple orb which can be launched at any target within 400ft. Every creature the orb passes, make an attack roll against the creature. The orb will punch through any simple physical barriers and deals (2 + proficiency bonus)d10 kinetic damage to any creature successfully hit by the orb.
+              <br><br>
+              Every creature successfully hit by the attack will be debuffed with one of TWO debuffs:
+              <br>Red: Creature is unable to move until the end of their next turn, as their energy is rapidly sapped away.
+              <br>Blue: Creatures physical armor and resistances is rapidly deconstructed. Creature cannot benefit from resistances until the end of their next turn. 
+            </p>
+          </div>
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Potential Color Shift: Lime Green (22SP)</button>
+          <div id="skill-content">
+            <p>As a main action, by fusing Blue and Yellow together, rapidly shifting Spirit and Energy into the hosts body. The host becomes charged with massive amounts of energy and Spirit before letting it release as multiple streams of emerald green lightning blasts at an enemy. All creatures within a 60ft cone will make a DEX save, on a successful save they take half. Creatures will take damage equal to (2+PB) d12 psychic damage, as this energy rends at the Spirit and their Energy. Creatures who fail the save for this ability will be unable to regain SPIRIT until the end of their next turn.
+            </p>
+          </div>
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Dynamic Color Shift: Citrus Orange (14SP)</button>
+          <div id="skill-content">
+            <p>As a reaction, when you were to be downed by a single instance of damage, you instead revert back to half of your maximum HP and full SP. By fusing Red and Yellow together, you can rapidly regenerate your energy and spirit to prevent a fatal demise.
+            </p>
+          </div>
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Amplify: Perfect Purple (28SP + ):</button>
+          <div id="skill-content">
+            <p>As an action, the host character picks a simple object no bigger than the palm of his hand, the object is rapidly compressed and charged with energy by Amplified Blue and Amplified Red. As part of the same action, you can freely convert as many spell slots as you can into Spirit, and expend as much SP on this ability as you want, with the minimum of 28. The object slowly becomes a glowing purple orb which can be launched at any target within 400ft, 10ft wide. Every creature the orb passes, make an attack roll against the creature. The orb will punch through any simple physical barriers and deals (3 + 2xproficiency bonus)d12 force damage and deal additional damage equal to SP spent to any creature successfully hit by the orb. 
+              <br><br>
+              Creatures hit by Perfect Purple incur BOTH the following effects.
+
+              <br>Red: Creature is unable to move until the end of their next turn, as their energy is rapidly sapped away.
+              <br>Blue: Creatures physical armor and resistances is rapidly deconstructed. Creature cannot benefit from resistances until the end of their next turn
+              <br><br>
+              After Perfect Purple is finished casting, host is unable to regain SP for two turns, and their shade abilities are disabled for one turn. 
+            </p>
+          </div>
+        </div>
+
+        <div style="align-self: center;">
+          <div style="margin-top: 20px" class="host-name">Host: Sojo</div>
+          <img
+            src="../../images/player-sojo.jpg"
+            class="image"
+            height="200px"
+            width="200px"
+          />
         </div>
       </div>
     </div>
-    <div id="myModal" class="modal">
-      <!-- Close button -->
-      <span class="close">&times;</span>
-      <!-- Modal Content -->
-      <img
-        src="../../images/shade-death.png"
-        alt="Death"
-        class="modal-content"
-        id="img01"
-      />
-      <!-- Modal Image caption -->
-      <div id="caption"></div>
-    </div>
+
+    <script>
+      $("#header").load("../../components/header.html");
+      $("#sidebar").load("../../components/sidebar.html");
+
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
   </body>
 </html>

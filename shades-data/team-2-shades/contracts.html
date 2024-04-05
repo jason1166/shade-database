@@ -5,207 +5,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="../../style.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-    <script src="../../script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../../script.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <title>Shade of Contracts</title>
   </head>
   <body>
-    <div class="header">
-      <div class="page-title">
-        <a href="../../index.html" style="text-decoration: none">Shades</a>
-      </div>
-      <ul class="nav-bar">
-        <li><a href="../../game-info/hunter-skills.html">Skills</a></li>
-        <li>
-          <a href="../../game-info/hunter-instruments.html">Instruments</a>
-        </li>
-        <li><a href="../../shades-menu.html">Shades</a></li>
-      </ul>
+    <div id="sidebar" class="sidebar">
+      <!--sidebar here-->
     </div>
 
-    <div class="data-container">
-      <div class="name">SHADE OF CONTRACTS</div>
-      <div class="content">
-        <div class="image-description-container">
-          <div>
-            <img
-              src="../../images/shade-contracts.png"
-              class="image"
-              id="shade-image"
-              alt="Shade of Contracts"
-              height="400px"
-              width="600px"
-            />
-          </div>
-          <div class="desc">
-            A shrouded four-armed figure with an ominous, expressionless mask.
-            In each of the hands is a gavel, a balancing scale, a watch and a
-            blank contract.
-          </div>
-          <div style="margin-top: 20px" class="abilities">Host: Leonard</div>
-          <div>
-            <img
-              src="../../images/player-leonard.png"
-              class="image player-image"
-              height="200px"
-              width="200px"
-            />
+    <div id="main">
+      <div id="header">
+        <!--Header content here-->
+      </div>
+
+      <div class="data-container">
+        <div class="name">
+          SHADE OF CONTRACTS
+        </div>
+
+        <div class="desc">
+          A shrouded four-armed figure with an ominous, expressionless mask. In each of the hands is a gavel, a balancing scale, a watch and a blank contract.
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Contractual Restriction (7SP/Round)</button>
+          <div id="skill-content">
+            <p> 
+              As a bonus action, you can create a contract for a willing, allied character within 50ft of you. The contract will impose a limitation on them, but bestow them an advantage. Pick one of the following restrictive effects:
+              <br><br>
+              -Movement speed falls to 0, if the character is moved in any way, even if involuntary, the contract will be broken.
+              <br>-HP will be unable to be restored for the duration of the contract, and character will lose 20% of their max HP per turn.
+              <br>-Character is unable to make any attacks or hostile actions against any creatures/entities or otherwise
+              <br>-Character becomes unable to use SPIRIT or Shade abilities, and loses 20% of their maximum SPIRIT per turn.
+              <br><br>
+              Next, the character will gain one of the following advantageous effects:
+              <br>-Movement speed is doubled for the duration of the contract
+              <br>-Character gains advantage on all attack rolls
+              <br>-Character regains SPIRIT equal to 3xPB per turn.
+              <br>-Any effect up to DMs discretion.
+              
+              If the contract is broken by the restrictive effects being disobeyed by the target creature, the creature will suffer damage equal to 20% of their Max HP and 20% of their Max Spirit.  The contract can be dissolved early as a bonus action but only after at least one round has passed since the contract's making. The contract terms will be loudly announced to all parties, including nearby characters.
+              
+              To maintain the contract, every round, the host's SP will decrease by 2.
+            </p>
           </div>
         </div>
-        <div class="skill-signature-container">
-          <div class="ability-list">
-            <div class="skill-title">SKILLS</div>
-            <div class="abilities" style="padding-top: 0px">
-              <table>
-                <tr>
-                  <th style="text-align: left; font-size: 20px">
-                    Contractual Restriction [7SP/Round]
-                  </th>
-                </tr>
-                <tr>
-                  <td>
-                    As a bonus action, you can create a contract for a willing,
-                    allied character within 50ft of you. The contract will
-                    impose a limitation on them, but bestow them an advantage.
-                    Pick one of the following restrictive effects:
-                    <ul>
-                      <li>
-                        Movement speed falls to 0, if the character is moved in
-                        any way, even if involuntary, the contract will be
-                        broken.
-                      </li>
-                      <li>
-                        HP will be unable to be restored for the duration of the
-                        contract, and character will lose 20% of their max HP
-                        per turn.
-                      </li>
-                      <li>
-                        Character is unable to make any attacks or hostile
-                        actions against any creatures/entities or otherwise
-                      </li>
-                      <li>
-                        Character becomes unable to use SPIRIT or Shade
-                        abilities, and loses 20% of their maximum SPIRIT per
-                        turn.
-                      </li>
-                    </ul>
-                    Next, the character will gain one of the following
-                    advantageous effects:
-                    <ul>
-                      <li>
-                        Movement speed is doubled for the duration of the
-                        contract
-                      </li>
-                      <li>Character gains advantage on all attack rolls</li>
-                      <li>Character regains SPIRIT equal to 3xPB per turn.</li>
-                      <li>Any effect up to DMs discretion.</li>
-                    </ul>
 
-                    If the contract is broken by the restrictive effects being
-                    disobeyed by the target creature, the creature will suffer
-                    damage equal to 20% of their Max HP and 20% of their Max
-                    Spirit. The contract can be dissolved early as a bonus
-                    action but only after at least one round has passed since
-                    the contract's making. The contract terms will be loudly
-                    announced to all parties, including nearby characters. To
-                    maintain the contract, every round, the host's SP will
-                    decrease by 2.
-                  </td>
-                </tr>
-              </table>
-            </div>
-            <div class="abilities">
-              <table>
-                <tr>
-                  <th style="text-align: left; font-size: 20px">
-                    PASSIVE: Intuition for the Truth
-                  </th>
-                </tr>
-                <tr>
-                  <td>
-                    As a passive ability, you have advantage on Insight checks
-                    pertaining to lies and deception. You are able to claw
-                    through those who seek to deceive others for their own gain.
-                  </td>
-                </tr>
-              </table>
-            </div>
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">PASSIVE: Intuition for the Truth </button>
+          <div id="skill-content">
+            <p>As a passive ability, you have advantage on Insight checks pertaining to lies and deception. You are able to claw through those who seek to deceive others for their own gain. </p>
           </div>
-          <div class="signature">
-            <div class="skill-title">SIGNATURE</div>
-            <div class="signature-text">
-              <table>
-                <tr>
-                  <th style="text-align: left; font-size: 20px">
-                    Leges Ut Omnes Obedi, The Laws That All Obey [6SP/Round]
-                  </th>
-                </tr>
-                <tr>
-                  <td>
-                    As a free action, you will manifest an ethereal domain that
-                    spans 90ft from you in a circle. The domain will no longer
-                    move once deployed, and can only be deployed from yourself.
-                    Shade of Contracts, will detach from you, going high up in
-                    the air, and binds a number of creatures of its choice to a
-                    contract. This ability when used is counted as a Domain for
-                    the sake of Domain Clashes.
-                    <br /><br />Binding: A set of rules that every character
-                    chosen within domain itself must abide by, only one law can
-                    be effective at a time, but as a bonus action you may change
-                    it on your turn.
-                    <ul>
-                      <li>Characters don't miss an attack</li>
-                      <li>
-                        Characters are unable to use Shade techniques or
-                        abilities that use SPIRIT
-                      </li>
-                      <li>Characters are unable to move</li>
-                      <li>Discretion</li>
-                    </ul>
-                    Fines: When the rules are broken Contracts will impose a
-                    fine on the offender, a single creature can be incurred a
-                    maximum of 3 Fines in a round.
-                    <ul>
-                      <li>Drain 5SP when breaching contract</li>
-                      <li>Take 2d8 Necrotic damage when breaching contract</li>
-                      <li>Next roll is rolled with disadvantage</li>
-                      <li>Creature's reaction is confiscated</li>
-                    </ul>
-                    Dividends: When a round is over, any character that did not
-                    receive a fine is awarded a Dividend
-                    <ul>
-                      <li>Regain 7SP</li>
-                      <li>Next damage roll is rolled with pent</li>
-                      <li>The creature can take one additional reaction</li>
-                      <li>The creature is given one additional bonus action</li>
-                    </ul>
-                    The effects Dividends, Fines and who chosen by the
-                    contracts, cannot be changed and must be designated when the
-                    domain is laid out. ONLY ONE SET OF RULES/DIVIDENDS/FINES
-                    CAN BE ACTIVE AT A TIME. To maintain the domain, every
-                    round, the host's SP will decrease by 6. Additionally, the
-                    host is unable to regain SP while the domain is deployed.
-                    The host can use their main action to dispel the domain
-                    early.
-                  </td>
-                </tr>
-              </table>
-            </div>
+        </div>
+
+        <div class="signature-label">
+          SHADE SIGNATURE
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Leges Ut Omnes Obedi, The Laws That All Obey (6SP/Round)</button>
+          <div id="skill-content">
+            <p>As a free action, you will manifest an ethereal domain that spans 90ft from you in a circle. The domain will no longer move once deployed, and can only be deployed from yourself. Shade of Contracts, will detach from you, going high up in the air, and binds a number of creatures of its choice to a contract. This ability when used is counted as a Domain for the sake of Domain Clashes.
+              <br><br>
+              Binding:
+              <br>A set of rules that every character chosen within domain itself must abide by, only one law can be effective at a time, but as a bonus action you may change it on your turn.
+              <br>-Characters don't miss an attack
+              <br>-Characters are unable to use Shade techniques or abilities that use SPIRIT
+              <br>-Characters are unable to move
+              <br>-Discretion
+              <br><br>
+              When the rules are broken Contracts will impose a fine on the offender, a single creature can be incurred a maximum of 3 Fines in a round. 
+              <br>Fines:
+              <br>Drain 5SP when breaching contract
+              <br>Take 2d8 Necrotic damage when breaching contract
+              <br>Next roll is rolled with disadvantage
+              <br>Creature's reaction is confiscated
+              <br><br>
+              When a round is over, any character that did not receive a fine is awarded a Dividend
+              <br>Dividends:
+              <br>Regain 7SP
+              <br>Next damage roll is rolled with pent
+              <br>The creature can take one additional reaction
+              <br>The creature is given one additional bonus action
+              <br><br>
+              The effects Dividends, Fines and who chosen by the contracts, cannot be changed and must be designated when the domain is laid out. ONLY ONE SET OF RULES/DIVIDENDS/FINES CAN BE ACTIVE AT A TIME
+              <br><br>
+              To maintain the domain, every round, the host's SP will decrease by 6. Additionally, the host is unable to regain SP while the domain is deployed. The host can use their main action to dispel the domain early.</p>
           </div>
+        </div>
+
+        <div style="align-self: center;">
+          <div style="margin-top: 20px" class="host-name">Host: Leonard</div>
+          <img
+            src="../../images/player-leonard.png"
+            class="image"
+            height="200px"
+            width="200px"
+          />
         </div>
       </div>
     </div>
-    <div id="myModal" class="modal">
-      <!-- Close button -->
-      <span class="close">&times;</span>
-      <!-- Modal Content -->
-      <img
-        src="../../images/shade-death.png"
-        alt="Death"
-        class="modal-content"
-        id="img01"
-      />
-      <!-- Modal Image caption -->
-      <div id="caption"></div>
-    </div>
+
+    <script>
+      $("#header").load("../../components/header.html");
+      $("#sidebar").load("../../components/sidebar.html");
+
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
   </body>
 </html>

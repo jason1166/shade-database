@@ -5,198 +5,163 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="../../style.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-    <script src="../../script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../../script.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <title>Shade of Nature</title>
   </head>
   <body>
-    <div class="header">
-      <div class="page-title">
-        <a href="../../index.html" style="text-decoration: none">Shades</a>
-      </div>
-      <ul class="nav-bar">
-        <li><a href="../../game-info/hunter-skills.html">Skills</a></li>
-        <li>
-          <a href="../../game-info/hunter-instruments.html">Instruments</a>
-        </li>
-        <li><a href="../../shades-menu.html">Shades</a></li>
-      </ul>
+    <div id="sidebar" class="sidebar">
+      <!--sidebar here-->
     </div>
 
-    <div class="data-container">
-      <div class="name">SHADE OF NATURE</div>
-      <div class="content">
-        <div class="image-description-container">
-          <div>
-            <img
-              src="../../images/shade-nature.jpg"
-              class="image"
-              id="shade-image"
-              alt="Shade of Nature"
-              height="400px"
-              width="600px"
-            />
-          </div>
-          <div class="desc">
-            The shade of nature resembles a small humanoid sprite made of
-            flowers, vines and leaves. It can manipulate its size, appearing as
-            a much larger humanoid, standing as tall as 7ft, or standing as
-            small as a house cat. Shade of Nature has an echoing, monotone
-            voice, but comes off as a warm, compassionate spirit.
-          </div>
-          <div style="margin-top: 20px" class="abilities">Host: Eirdain</div>
-          <div>
-            <img
-              src="../../images/player-eirdain.jpg"
-              class="image player-image"
-              height="200px"
-              width="200px"
-            />
+    <div id="main">
+      <div id="header">
+        <!--Header content here-->
+      </div>
+
+      <div class="data-container">
+        <div class="name">
+          SHADE OF NATURE
+        </div>
+
+        <div class="desc">
+          The shade of nature resembles a small humanoid sprite made of flowers, vines and leaves. It can manipulate its size, appearing as a much larger humanoid,  standing as tall as 7ft, or standing as small as a house cat. Shade of Nature has an echoing, monotone voice, but comes off as a warm, compassionate spirit.
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Green Thumb (3SP)</button>
+          <div id="skill-content">
+            <p>Shade of Nature can make vegetation grow rapidly, imbuing wilting plants and creatures with life force. Aside from that, animals feel a calming presence when Shade of Nature shows itself. Shade of Nature can also sprout smaller plants and vegetation from its body, such as simple flowers or vines. Even though Nature is a kind shade, it is more than capable of defending itself and inflicting harm onto those it wishes. As a bonus action, you can now rapidly sprout plants imbued with your Spirit, giving the vegetation brief life and vitality to aid in battle.</p>
           </div>
         </div>
-        <div class="skill-signature-container">
-          <div class="ability-list">
-            <div class="skill-title">SKILLS</div>
-            <div class="abilities" style="padding-top: 0px">
-              <table>
-                <tr>
-                  <th style="text-align: left; font-size: 20px">
-                    Green Thumb [3SP]
-                  </th>
-                </tr>
-                <tr>
-                  <td>
-                    Shade of Nature can make vegetation grow rapidly, imbueing
-                    wilting plants and creatures with life force. Aside from
-                    that, animals feel a calming presence when Shade of Nature
-                    shows itself. Shade of Nature can also sprout smaller plants
-                    and vegetation from its body, such as simple flowers or
-                    vines. Even though Nature is a kind shade, it is more than
-                    capable of defending itself and inflicting harm onto those
-                    it wishes.
-                  </td>
-                </tr>
-              </table>
-            </div>
-            <div class="abilities">
-              <table>
-                <tr>
-                  <th style="text-align: left; font-size: 20px">
-                    Green Thumb: Tulip [8SP]
-                  </th>
-                </tr>
-                <tr>
-                  <td>
-                    A symbol a good luck and prosperity, as a bonus action, a
-                    creature within 60ft of the host has tulips sprout out from
-                    under neath them, blessing them with good fortunes. The
-                    creatures next failed roll will automatically be rerolled,
-                    but the second roll must be used.
-                  </td>
-                </tr>
-              </table>
-            </div>
-            <div class="abilities">
-              <table>
-                <tr>
-                  <th style="text-align: left; font-size: 20px">
-                    Green Thumb: Red Roses [8SP]
-                  </th>
-                </tr>
-                <tr>
-                  <td>
-                    A symbol of violence and bloodshed, as a main action, a
-                    thorny vine with a rose at the end of it appears within 60ft
-                    of the host, and makes THREE consecutive melee attacks
-                    against a creature within 5ft. The attack rolls adds your
-                    WIS mod + PB, and does 1d6+PB piercing damage. On a critical
-                    hit, the target is grappled automatically by the thorn. The
-                    thorn dissipates at the start of the host's next turn.
-                  </td>
-                </tr>
-              </table>
-            </div>
-            <div class="abilities">
-              <table>
-                <tr>
-                  <th style="text-align: left; font-size: 20px">
-                    Green Thumb: Dead Man's Flower [8SP]
-                  </th>
-                </tr>
-                <tr>
-                  <td>
-                    A symbol of decay and the inevitable end of all things, as a
-                    main action, you summon a giant ethereal rafflesia in an
-                    unoccupied 5ft square within 60ft. Hostile creatures must
-                    make a WIS Saving throw. On a failure, they will immediately
-                    move 20ft away from the Rafflessia, triggering opportunity
-                    of attacks, this does not consume their movement during
-                    their actual turn. The Rafflesia quickly dissipates right
-                    after.
-                  </td>
-                </tr>
-              </table>
-            </div>
-            <div class="abilities">
-              <table>
-                <tr>
-                  <th style="text-align: left; font-size: 20px">
-                    PASSIVE: Voice of Nature
-                  </th>
-                </tr>
-                <tr>
-                  <td>
-                    Advantage on animal handling and nature checks.
-                    Additionally, only Shade of Nature (not the host), can
-                    communicate with plants and animals, thought communication
-                    is limited. Additionally, Shade of Nature's host gains
-                    affinity with the bodies and vessels of animals. If in wild
-                    shape or polymorphed, the host can still use Shade abilities
-                    that use SP without Shapeshifted Penalty.
-                  </td>
-                </tr>
-              </table>
-            </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Green Thumb: Tulip (8SP)</button>
+          <div id="skill-content">
+            <p>A symbol a good luck and prosperity, as a bonus action, a creature within 60ft of the host has tulips sprout out from underneath them, blessing them with good fortunes. The creatures next failed roll will automatically be rerolled, but the second roll must be used.</p>
           </div>
-          <div class="signature">
-            <div class="skill-title">SIGNATURE</div>
-            <div class="signature-text">
-              <table>
-                <tr>
-                  <th style="text-align: left; font-size: 20px">
-                    Kaṁīpaṇa māṁ saḍō: Decay Into Nothing, And be Born Back into
-                    the Cycle [5SP/Round]
-                  </th>
-                </tr>
-                <tr>
-                  <td>
-                    As a bonus action, in a 90ft radius around where the host
-                    is, all creatures within the range will start to decay. Each
-                    living creature within the range will lose max HP equal to
-                    1d8 + half of their level per turn. Shade of Nature can
-                    designate creatures within line of sight to have immunity to
-                    the HP decay. If a creature moves more than 20ft while under
-                    the effects of decay, the decay reduction will double. This
-                    ability counts as a Domain for the sake of Domain Clashes
-                  </td>
-                </tr>
-              </table>
-            </div>
+        </div>
+        
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Green Thumb: Red Roses (8SP) </button>
+          <div id="skill-content">
+            <p>A symbol of violence and bloodshed, as a main action, a thorny vine with a rose at the end of it appears within 60ft of the host, and makes THREE consecutive melee attacks against a creature within 5ft. The attack rolls adds your WIS mod + PB, and does 1d6+PB piercing damage. On a critical hit, the target is grappled automatically by the thorn. The thorn dissipates at the start of the host's next turn. 
+            </p>
           </div>
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Bloom: Golden Pothos (9SP)</button>
+          <div id="skill-content">
+            <p>Golden Pothos, a symbol of preservation. As a reaction, when a creature takes damage from an attack roll within 60ft, a golden Pothos is wreathed around the creature, the Pothos has a HP of 20, and it absorbs the damage they take. 
+            </p>
+          </div>
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Bloom: Dandelion (3SP/Each) </button>
+          <div id="skill-content">
+            <p>Dandelion, a symbol of free will and movement. As a bonus action, you can create Dandelions up to PB. As a free action, any allied creature within 10ft of the Dandelion can consume it, and gain +10ft movement speed, and not proc any opportunity of attacks. 
+            </p>
+          </div>
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">PASSIVE: Voice of Nature</button>
+          <div id="skill-content">
+            <p>Advantage on animal handling and nature checks. Additionally, only Shade of Nature  (not the host), can communicate with plants and animals, thought communication is limited. Additionally, Shade of Nature's host gains affinity with the bodies and vessels of animals. If in wild shape or polymorphed, the host can still use Shade abilities that use SP without Shapeshifted Penalty.
+            </p>
+          </div>
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">PASSIVE: The Natural Form</button>
+          <div id="skill-content">
+            <p>You can one more use of your wildshape, additionally your SP cap increases by 5 + PB
+            </p>
+          </div>
+        </div>
+
+        <div class="signature-label">
+          SHADE SIGNATURE
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Kaṁīpaṇa māṁ saḍō: Decay Into Nothing, And be Born Back into the Cycle (5SP/Round)</button>
+          <div id="skill-content">
+            <p>As a bonus action, in a 90ft radius around where the host is, all creatures within the range will start to decay. Each living creature within the range will lose max HP equal to 1d8 + half of their level per turn. Shade of Nature can designate creatures within line of sight to have immunity to the HP decay. If a creature moves more than 20ft while under the effects of decay, the decay reduction will double. This ability counts as a Domain for the sake of Domain Clashes
+            </p>
+          </div>
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Blossoming Life Breathes!</button>
+          <div id="skill-content">
+            <p>When using Kaṁīpaṇa māṁ saḍō: Decay Into Nothing, And be Born Back into the Cycle: In addition, as a bonus action, you can designate three spots within the domain, three large blossoming flowers will grow and spawn out of natures domain. If an allied creature starts its turn within 15ft of a blossoming flower, they heal HP equal to host PB, this effect cannot stack. Whenever a creature takes damage, as a reaction, if they are within 15ft of the blossoming flowers, you can heal them for 1d8+PB AFTER DAMAGE RESOLVES. This reaction destroys the blossoming flower. Additionally, the flower has 8AC and 10HP, and can be targeted and destroyed. Using a bonus action, you can resummon the flowers up to a maximum of three at a time, but each summon costs 5SP each.              
+            </p>
+          </div>
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">The Wilds Call to Nature!</button>
+          <div id="skill-content">
+            <p>While in your domain,Kaṁīpaṇa māṁ saḍō: Decay Into Nothing, And be Born Back into the Cycle, you can use your bonus action to construct a wildshape within the domain expansion. It lasts as long as the domain is active. These creatures are immune to the decay, and after each creature ends their turn, you gain SP equal to your PB.
+            </p>
+          </div>
+        </div>
+
+        <div style="align-self: center;">
+          <div style="margin-top: 20px" class="host-name">Host: Eirdain</div>
+          <img
+            src="../../images/player-eirdain.jpg"
+            class="image"
+            height="200px"
+            width="200px"
+          />
         </div>
       </div>
     </div>
-    <div id="myModal" class="modal">
-      <!-- Close button -->
-      <span class="close">&times;</span>
-      <!-- Modal Content -->
-      <img
-        src="../../images/shade-death.png"
-        alt="Death"
-        class="modal-content"
-        id="img01"
-      />
-      <!-- Modal Image caption -->
-      <div id="caption"></div>
-    </div>
+
+    <script>
+      $("#header").load("../../components/header.html");
+      $("#sidebar").load("../../components/sidebar.html");
+
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
   </body>
 </html>

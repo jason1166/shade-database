@@ -5,135 +5,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="../../style.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-    <script src="../../script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../../script.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <title>Shade of Vengeance</title>
   </head>
   <body>
-    <div class="header">
-      <div class="page-title">
-        <a href="../../index.html" style="text-decoration: none">Shades</a>
-      </div>
-      <ul class="nav-bar">
-        <li><a href="../../game-info/hunter-skills.html">Skills</a></li>
-        <li>
-          <a href="../../game-info/hunter-instruments.html">Instruments</a>
-        </li>
-        <li><a href="../../shades-menu.html">Shades</a></li>
-      </ul>
+    <div id="sidebar" class="sidebar">
+      <!--sidebar here-->
     </div>
 
-    <div class="data-container">
-      <div class="name">SHADE OF VENGEANCE</div>
-      <div class="content">
-        <div class="image-description-container">
-          <div>
-            <img
-              src="../../images/shade-vengeance.png"
-              class="image"
-              id="shade-image"
-              alt="Shade of Vengeance"
-              height="400px"
-              width="400px"
-            />
-          </div>
-          <div class="desc">
-            Shade of Vengeance manifests itself as a little white cat. Despite
-            its appearances, it is indeed the incarnate of vengeance, bringer of
-            doom to wrongdoers, punisher of misdeeds, equaliser of hatred and is
-            most definitely a very cool shade, or so it says
-          </div>
-          <div style="margin-top: 20px" class="abilities">Host: Colt</div>
-          <div>
-            <img
-              src="../../images/player-colt.png"
-              class="image player-image"
-              height="200px"
-              width="200px"
-            />
+    <div id="main">
+      <div id="header">
+        <!--Header content here-->
+      </div>
+
+      <div class="data-container">
+        <div class="name">
+          SHADE OF VENGEANCE
+        </div>
+
+        <div class="desc">
+          Shade of Vengeance manifests itself as a little white cat. Despite its appearances, it is indeed the incarnate of vengeance, bringer of doom to wrongdoers, punisher of misdeeds, equaliser of hatred and is most definitely a very cool shade, or so it says
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Condemn the Sinners (8SP)</button>
+          <div id="skill-content">
+            <p>As a main action, the host throws a chain that emerges from the ground underneath the host's feet. The chain travels in a straight line of 30ft, make an attack roll against each creature in the line. On a successful hit, deal 1d10+PB bludgeoning damage and their next attack roll is subtracted by d8. On a crit, the target is grappled until the end of their next turn. If a creature is affected by The Weight of Your Sins Shackle You, when hit by this ability one shackle is added to them, and another Condemn the Sinners will occur, originating from the creature again.</p>
           </div>
         </div>
-        <div class="skill-signature-container">
-          <div class="ability-list">
-            <div class="skill-title">SKILLS</div>
-            <div class="abilities" style="padding-top: 0px">
-              <table>
-                <tr>
-                  <th style="text-align: left; font-size: 20px">
-                    Blood of the Guilty [5SP]
-                  </th>
-                </tr>
-                <tr>
-                  <td>
-                    On a hit, the bullet absorbs the targets blood. The user may
-                    now see the target's past misdeeds (harming another being)
-                    through their point of view. The user is mentally alerted if
-                    the target inflicts damage.
-                  </td>
-                </tr>
-              </table>
-            </div>
-            <div class="abilities">
-              <table>
-                <tr>
-                  <th style="text-align: left; font-size: 20px">
-                    Vow of Vengeance [5SP/Reaction]
-                  </th>
-                </tr>
-                <tr>
-                  <td>
-                    As a bonus action, designate a creature within 60ft, they
-                    will gain Vow of Vengeance. Any creature that rolls a
-                    successful attack roll against the creature will be
-                    counterattacked by the host provided they are within range
-                    and capable. This counterattack can be used twice a round,
-                    and cannot benefit from any modifiers or feats. When
-                    successfully counterattacking, gain SP equal to your PB.
-                  </td>
-                </tr>
-              </table>
-            </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">The Sinners Flock Together (8SP)</button>
+          <div id="skill-content">
+            <p>As a main action, the host throws a binding of multiple chains at a 5ft square within 30ft range. From where the binding of chains land, they rapidly extend and bind hostile creatures within 30ft. The creatures must save on a DC8+PB+WIS STR saving throw or be pulled into the center of origin. Creatures who fail the save will take 1d6 damage per creature pulled to the center. If a creature is affected by The Weight of Your Sins Shackle You, is affected by this ability, they fail the STR saving throw immediately, and immediately one shackle is added to them and all adjacent hostile creatures. 
+            </p>
           </div>
-          <div class="signature">
-            <div class="skill-title">SIGNATURE</div>
-            <div class="signature-text">
-              <table>
-                <tr>
-                  <th style="text-align: left; font-size: 20px">
-                    Nauyin Zunubanku Ya Shafe ku: The Weight of Your Sins
-                    Shackle You [12SP]
-                  </th>
-                </tr>
-                <tr>
-                  <td>
-                    On a successful hit, 3 shackles emerge from the ground and
-                    anchor its target. On a crit, the number of shackles
-                    increases to 4. For each shackle, target loses 5ft movement
-                    speed. When the target is targeted by an attack or the
-                    target makes an attack roll, you can add or subtract a d6 to
-                    the roll, when doing so, a shackle is broken. When the
-                    host's attack roll pents against the target, provided they
-                    do not expend a chain, a new chain appears and latches onto
-                    the target creature.
-                  </td>
-                </tr>
-              </table>
-            </div>
+        </div>
+        
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Solace in Kindred Hatred (5SP/Round)</button>
+          <div id="skill-content">
+            <p>As a bonus action, designate a target within 30ft that has incurred damage to your allies within the last turn. Pun dives into the ground and vanishes, a shining, fiery feline spirit appears above the target. For a number of times equal to PB, allies who land a successful attack roll against this target regain SP equal to PB. If the marked creature is affected by The Weight of Your Sins Shackle You, when any shackle on the target is used, host regains 2SP.</p>
           </div>
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Blood of the Guilty (5SP) </button>
+          <div id="skill-content">
+            <p>On a hit, the bullet absorbs the targets blood. The user may now see the target's past misdeeds (harming another being) through their point of view. The user is mentally alerted if the target inflicts damage.</p>
+          </div>
+        </div>
+
+        <div class="signature-label">
+          SHADE SIGNATURE
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Nauyin Zunubanku Ya Shafe ku: The Weight of Your Sins Shackle You (12SP) </button>
+          <div id="skill-content">
+            <p>On a successful hit, 3 shackles emerge from the ground and anchor its target. On a crit, the number of shackles increases to 4. When the target is targeted by an attack or the target makes an attack roll, you can add or subtract a d6 to the roll, when doing so, a shackle is broken.</p>
+          </div>
+        </div>
+
+        <div style="align-self: center;">
+          <div style="margin-top: 20px" class="host-name">Host: Colt</div>
+          <img
+            src="../../images/player-colt.png"
+            class="image"
+            height="200px"
+            width="200px"
+          />
         </div>
       </div>
     </div>
-    <div id="myModal" class="modal">
-      <!-- Close button -->
-      <span class="close">&times;</span>
-      <!-- Modal Content -->
-      <img
-        src="../../images/shade-death.png"
-        alt="Death"
-        class="modal-content"
-        id="img01"
-      />
-      <!-- Modal Image caption -->
-      <div id="caption"></div>
-    </div>
+
+    <script>
+      $("#header").load("../../components/header.html");
+      $("#sidebar").load("../../components/sidebar.html");
+
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
   </body>
 </html>

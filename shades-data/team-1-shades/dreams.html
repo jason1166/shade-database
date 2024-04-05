@@ -5,289 +5,201 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="../../style.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-    <script src="../../script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../../script.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <title>Shade of Dreams</title>
   </head>
   <body>
-    <div class="header">
-      <div class="page-title">
-        <a href="../../index.html" style="text-decoration: none">Shades</a>
-      </div>
-      <ul class="nav-bar">
-        <li><a href="../../game-info/hunter-skills.html">Skills</a></li>
-        <li>
-          <a href="../../game-info/hunter-instruments.html">Instruments</a>
-        </li>
-        <li><a href="../../shades-menu.html">Shades</a></li>
-      </ul>
+    <div id="sidebar" class="sidebar">
+      <!--sidebar here-->
     </div>
 
-    <div class="data-container">
-      <div class="name">SHADE OF DREAMS</div>
-      <div class="content">
-        <div class="image-description-container">
-          <div class="slideshow-container">
-            <div class="mySlides fade">
-              <div class="numbertext">1 / 4</div>
-              <img
-                src="../../images/shade-dreams-1.png"
-                class="image"
-                id="shade-image"
-                alt="Shade of Dreams 1st Form"
-                height="400px"
-                width="400px"
-              />
-              <div class="desc caption-text">                
-                A disembodied floating cloud that appears differently to everyone 
-                depending on the person. Is generally a very enthusiastic and 
-                optimistic mind, keeping a cheery attitude no matter what the 
-                circumstance. Has a childlike attitude of hopefulness.
-              </div>
-            </div>
-            <div class="mySlides fade">
-              <div class="numbertext">2 / 4</div>
-              <img
-                src="../../images/shade-dreams-2.png"
-                class="image"
-                id="shade-image-2"
-                alt="Shade of Dreams 2nd Form"
-                height="600px"
-                width="400px"
-              />
-              <div class="desc caption-text">                
-                A disembodied floating eldritch horror with six arms. Is very
-                vague and cryptic in its speech, and exudes an ominous
-                personality, but seems helpful when it needs to be. It seems to
-                be keeping some cards behind its hand
-              </div>
-            </div>
-            <div class="mySlides fade">
-              <div class="numbertext">3 / 4</div>
-              <img
-                src="../../images/shade-dreams-3.png"
-                class="image"
-                id="shade-image-3"
-                alt="Shade of Dreams 3rd Form"
-                height="600px"
-                width="400px"
-              />
-              <div class="desc caption-text">Mickey</div>
-            </div>
-            <div class="mySlides fade">
-              <div class="numbertext">4 / 4</div>
-              <img
-                src="../../images/shade-dreams-4.jpg"
-                class="image"
-                id="shade-image-4"
-                alt="Shade of Dreams 4th Form"
-                height="400px"
-                width="400px"
-              />
-              <div class="desc caption-text">Goofy</div>
-            </div>
-            <a class="prev" onclick="plusSlides(-1)">&#10094</a>
-            <a class="next" onclick="plusSlides(1)">&#10095</a>
-          </div>
-          <br>
-          <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-          </div>
-          <div style="margin-top: 20px" class="abilities">Host: Neru</div>
-          <div>
-            <img
-              src="../../images/player-neru.png"
-              class="image"
-              height="200px"
-              width="200px"
-            />
+    <div id="main">
+      <div id="header">
+        <!--Header content here-->
+      </div>
+
+      <div class="data-container">
+        <div class="name">
+          SHADE OF DREAMS/NIGHTMARES
+        </div>
+
+        <div class="desc">
+          A disembodied floating eldritch horror with six arms. Is very vague and cryptic in its speech, and exudes an ominous personality, but seems helpful when it needs to be. It seems to be keeping some cards behind its hand
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Dreamwalker (5SP)</button>
+          <div id="skill-content">
+            <p>You can hop into the dreams of a character you see dreaming as long as your character is sleeping and within 100ft of the target. You will then walk amongst their dream without them knowing, in it, you will be able to interact and speak with the dreamer, but have no control over the dream itself. The dream reality may not behave proper rules of reality, -objects may not be destroyed, sudden drops in floors to an unending abyss-. You may exit the dream, and if the dreamer wakes up, you and the Shade of Dreams will be violently jettisoned from it. Additionally, some characters may be aware of a Shade's powers due to its emittance of SPIRIT, and may figure out that it is a Shade attack. You can drag nearby sleeping creatures into another dream as long as they are within 100ft of the host as well. You can drag a number of creatures equal to your SOUL or MIND stat</p>
           </div>
         </div>
-        <div class="skill-signature-container">
-          <div class="ability-list">
-            <div class="skill-title">SKILLS</div>
-            <div class="abilities" style="padding-top: 0px">
-              <table>
-                <tr>
-                  <th style="text-align: left; font-size: 20px">
-                    Dreamwalker [5SP]
-                  </th>
-                </tr>
-                <tr>
-                  <td>
-                    You can hop into the dreams of a character you see dreaming
-                    as long as your character is sleeping and within 100ft of
-                    the target. You will then walk amongst their dream without
-                    them knowing, in it, you will be able to interact and speak
-                    with the dreamer, but have no control over the dream itself.
-                    The dream reality may not behave proper rules of reality,
-                    -objects may not be destroyed, sudden drops in floors to an
-                    unending abyss. You may exit the dream, and if the dreamer
-                    wakes up, you and the Shade of Dreams will be violently
-                    jettisoned from it. Additionally, some characters may be
-                    aware of a Shade's powers due to its emittance of SPIRIT,
-                    and may figure out that it is a Shade attack. You can drag
-                    nearby sleeping creatures into another dream as long as they
-                    are within 100ft of the host as well. You can drag a number
-                    of creatures equal to your SOUL or MIND stat
-                  </td>
-                </tr>
-              </table>
-            </div>
-            <div class="abilities">
-              <table>
-                <tr>
-                  <th style="text-align: left; font-size: 20px">
-                    Dreams Evade Reality [4SP/Round]
-                  </th>
-                </tr>
-                <tr>
-                  <td>
-                    As a reaction, when an allied character except yourself
-                    fails a save or ability check within 25ft, you may add your
-                    WIS mod to the save.
-                  </td>
-                </tr>
-              </table>
-            </div>
-            <div class="abilities">
-              <table>
-                <tr>
-                  <th style="text-align: left; font-size: 20px">
-                    Dreams that Never End
-                  </th>
-                </tr>
-                <tr>
-                  <td>
-                    Shade of Dreams can manifest different types of dreams to
-                    warp reality and impose illusions that can fool even reality
-                    onto the battlefield. Neru enters a dreamlike state and is
-                    able to manipulate that battlefield from where he stands.
-                    These include:
-                    <ul>
-                      <li>
-                        <strong>Day Dreaming [7SP]</strong><br />
-                        Manifesting your day dreams into illusory reality, Shade
-                        of Dreams can deter attacks from hostiles. As a bonus
-                        action, pick an allied character you can see within
-                        25ft. Until the end of their next turn, when a creature
-                        targets them for an attack roll, Neru can roll a WIS
-                        Saving throw against the enemy's save DC. On a save, the
-                        creature is unable to target them.
-                      </li>
-                      <li>
-                        <strong>A Sunset That Never Ends [13SP]</strong><br />
-                        As a main action, you start to inspire hope and serenity
-                        into the souls and hearts of your allies. Pick a number
-                        of characters equal to your proficiency bonus within
-                        25ft will gain max spirit equal to your proficiency
-                        bonus + half your level rounded up, these creatures also
-                        add a bonus equal to their proficiency bonus to
-                        initiative rolls and perception rolls, even if they
-                        already have proficiency. The effects last for 10 minutes,
-                        this ability cannot stack.
-                      </li>
-                    </ul>
-                  </td>
-                </tr>
-              </table>
-            </div>
-            <div class="abilities">
-              <table>
-                <tr>
-                  <th style="text-align: left; font-size: 20px">
-                    PASSIVE: Dreamwatcher
-                  </th>
-                </tr>
-                <tr>
-                  <td>
-                    As a passive ability with no SP cost, your character can
-                    vaguely hear/see the daydreams and wandering thoughts of
-                    people around them, but it's fairly fuzzy and random, almost
-                    impossible to glean exact details from it.
-                  </td>
-                </tr>
-              </table>
-            </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">PASSIVE: Dreamwatcher</button>
+          <div id="skill-content">
+            <p>As a passive ability with no SP cost, your character can vaguely hear/see the daydreams and wandering thoughts of people around them, but it's fairly fuzzy and random, almost impossible to glean exact details from it.</p>
           </div>
-          <div class="signature">
-            <div class="skill-title">SIGNATURE</div>
-            <div class="signature-text">
-              <table>
-                <tr>
-                  <th style="text-align: left; font-size: 20px">
-                    Berðu draumana, Carry the Dreams of those No Longer with Us
-                    [7SP/Round]
-                  </th>
-                </tr>
-                <tr>
-                  <td>
-                    The domain has a radius of 90ft. All allied creatures when
-                    first entering the domain gain +5 max HP. All allied
-                    creatures within the domain have a +1 to saving throws and
-                    +1 to attack rolls as they are encouraged and egged on by
-                    visions of those they have lost. While within the domain,
-                    before the resolution of a roll has been decided, an allied
-                    creature can add the host's WIS mod to any roll they make.
-                    When doing so, the host's SP will decrease by that amount.
-                    This ability can be used up to a number of times equal to
-                    the hosts PB per round. This ability counts as a domain for
-                    the sake of domain clashes
-                  </td>
-                </tr>
-              </table>
-            </div>
+        </div>
+        
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Dreams Evade Reality</button>
+          <div id="skill-content">
+            <p>As a reaction, when an allied character except yourself fails a save or ability check within 25ft, you may add your WIS mod to the save.</p>
           </div>
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Day Dreaming (6SP)</button>
+          <div id="skill-content">
+            <p>Manifesting your day dreams into illusory reality, Shade of Dreams can deter attacks from hostiles. As a bonus action OR REACTION, pick an allied character you can see within 25ft. Until the end of their next turn, when a creature targets them for an attack roll, Neru can roll a WIS Saving throw against the enemy's save DC. On a save, the creature is unable to target them and loses the attack roll. This can only occur once per cast of Day Dreaming, and only one instance of Day Dreaming can be active at a time. </p>
+          </div>
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">A Sunset That Never Ends (12SP)</button>
+          <div id="skill-content">
+            <p>As a bonus action, you start to inspire hope and serenity into the souls and hearts of your allies. You restore the SP of creatures you can see within 60ft of you from a pool of SP equal to your Character Level x PB , you can allocate the SP to these creatures how you see fit., SP can overflow but follows the same rule as Convert Spirit. Pick a number of characters equal to your proficiency bonus within 60ft , they add a bonus equal to their proficiency bonus to initiative rolls and perception rolls, even if they already have proficiency. The effects last for 10 minute, this ability cannot stack, and this ability can be used a number of times equal to half of PB rounded up 
+            </p>
+          </div>
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title" style="color: #ca1919;">PASSIVE: Neverending Nightmare</button>
+          <div id="skill-content">
+            <p>When in Nightmare stance, your Maximum HP is increased by 150% (Currently 200HP)</p>
+          </div>
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title" style="color: #ca1919;">Nightmares Become Reality (8HP/Reaction)</button>
+          <div id="skill-content">
+            <p>When a hostile creature rolls an attack roll within 25ft, you may subtract your WIS mod from that roll.
+            </p>
+          </div>
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title" style="color: #ca1919;">Tormented Slumber (14HP)</button>
+          <div id="skill-content">
+            <p>As a bonus action, pick a creature within 25ft. Until the end of their next turn, the next time the creature rolls a saving throw against an effect, host makes a contested spell save against them, if the host rolls higher, the creature instantly fails the saving throw. This can only occur once per spell/effect.
+            </p>
+          </div>
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title" style="color: #ca1919;">A Sunrise that Never Starts (5HP)</button>
+          <div id="skill-content">
+            <p>As a bonus action, your entire figure and silhouette starts to become distorted, murky and nightmarish. You abandon all hope as you embrace the despair of the situation, for the next minute you gain HP for every point of damage a creature takes within 25ft of you, stacking to a maximum of up to half your maximum HP. When using this ability, all effects of A Sunset That Never Ends is immediately ended, and vice versa, these two abilities cannot stack. 
+            </p>
+          </div>
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Solstice</button>
+          <div id="skill-content">
+            <p>Switch stances between the two modes, Dreams and Nightmare. You are only able to use respective abilities in their respective stances, unless they are continuous (e.g Berðu draumana, Carry the Dreams of those No Longer with Us). You can switch stance once per round, free of turn order/reaction, and you may switch stances up to PB number of times per combat. When switching from Dreams to Nightmare you gain HP equal to double your missing SP. When switching from Nightmare to Dreams you gain SP equal to half the HP you used on Nightmare abilities Additionally, you prepare TWO SEPARATE spell lists for Dreams and Nightmares
+              <br><br>
+              Harbringer of Nightmares
+              -In this stance gain HP equivalent to 2x Character Level
+              <br><br>
+              Harbringer of Dreams
+              -In this stance gain max SP equivalent to half of character level rounded up
+            </p>
+          </div>
+        </div>
+
+        <div class="signature-label">
+          SHADE SIGNATURE
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Berðu draumana, Carry the Dreams of those No Longer with Us (7SP/Round)</button>
+          <div id="skill-content">
+            <p>As a main action, you can open a domain that spans from you. The domain has a radius of 90ft. All allied creatures when first entering the domain gain +5 max HP. All allied creatures within the domain have a +1 to saving throws and +1 to attack rolls as they are encouraged and egged on by visions of those they have lost. While within the domain, before the resolution of a roll has been decided, an allied creature can add the host's WIS mod to any roll they make. When doing so, the host's SP will decrease by that amount. This ability can be used up to a number of times equal to the hosts PB per round. This ability counts as a domain for the sake of domain clashes 
+            </p>
+          </div>
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title" style="color: #ca1919;">Yfirgefa Allt, Forsake All Who Are Behind Us</button>
+          <div id="skill-content">
+            <p>Usable when one, two or three of your allies fall or you make a costly binding vow
+              <br><br>
+              Using a binding vow that eats into your lifespan, this is a final trump card you only pull when you're absolutely pushed against the corner. Your entire form becomes shrouded in unspeakable horrors, and your very form becomes ungraspable by the human eye. Your cloak becomes elongated and nightmarish and you gain a number of new effects:
+              <br>
+              -You gain the ability to passively manifest illusions of fears around your enemies and targets, you learn minor illusion if you do not already have it, and you can cast it as a bonus action.
+              <br>
+              -Creatures that look at you for the first time must make a WIS saving throw or take PBD12 psychic damage 
+              <br>
+              -All your spells can be converted to psychic damage
+              <br>
+              -Your attacks can target SPIRIT DEF instead of AC.
+              <br>
+              -Whenever you lose HP because of a Nightmare ability, you gain temp HP equal to the HP lost.
+              <br><br>
+              Additionally, whenever you cast a spell that deals damage, you benefit from one, two or three of these effects:
+              <br>
+              Fear: Deals an additional PBd10 Psychic, rounded up damage to the creature.
+              <br>
+              Despair: Recover HP equal to PBD10
+              <br>
+              Regret: Give an advantage on the next roll to yourself or a disadvantage to the affected creatures next roll. 
+            </p>
+          </div>
+        </div>
+
+        <div style="align-self: center;">
+          <div style="margin-top: 20px" class="host-name">Host: Neru</div>
+          <img
+            src="../../images/player-neru.png"
+            class="image"
+            height="200px"
+            width="200px"
+          />
         </div>
       </div>
     </div>
-    <div id="myModal" class="modal">
-      <!-- Close button -->
-      <span class="close">&times;</span>
-      <!-- Modal Content -->
-      <img
-        src="../../images/shade-dreams-1.png"
-        alt="Dreams"
-        class="modal-content"
-        id="img01"
-      />
-      <!-- Modal Image caption -->
-      <div id="caption"></div>
-    </div>
+
     <script>
-      let slideIndex = 1;
-      showSlides(slideIndex);
+      $("#header").load("../../components/header.html");
+      $("#sidebar").load("../../components/sidebar.html");
 
-      // Next/previous controls
-      function plusSlides(n) {
-        showSlides((slideIndex += n));
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
       }
 
-      // Thumbnail image controls
-      function currentSlide(n) {
-        showSlides((slideIndex = n));
-      }
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
 
-      function showSlides(n) {
-        let i;
-        const slides = document.getElementsByClassName("mySlides");
-        const dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {
-          slideIndex = 1;
-        }
-        if (n < 1) {
-          slideIndex = slides.length;
-        }
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
       }
     </script>
   </body>
