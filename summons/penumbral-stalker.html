@@ -4,178 +4,145 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../script.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <title>Penumbral Stalker</title>
   </head>
   <body>
-    <div class="data-container">
-      <div class="name" style="margin-bottom: 20px">PENUMBRAL STALKER</div>
-      <div class="content">
-        <div class="image-and-stats">
-          <div>
-            <img
-              src="../images/summon-penumbral.png"
-              alt="Penumbral Stalker"
-              class="image"
-              height="350px"
-              width="350px"
-            />
-          </div>
-          <div class="stats">
-            <table>
-              <tr>
-                <td>HP:</td>
-                <td>5 x host Proficiency Bonus</td>
-              </tr>
-              <tr>
-                <td>AC:</td>
-                <td>12</td>
-              </tr>
-              <tr>
-                <td>SPD:</td>
-                <td>35ft</td>
-              </tr>
-            </table>
+    <div id="main">
+      <div class="data-container">
+        <div class="name">
+          PENUMBRAL STALKER
+        </div>
+        <div class="stats">
+          <ol style="list-style-type: none;">
+            <li>
+              HP:&emsp;5 x Proficiency Bonus
+            </li>
+            <li>
+              AC:&emsp;12
+            </li>
+            <li>
+              SPD:&emsp;35
+            </li>
+            <li>
+              COST:&emsp;5SP (Summon) &rarr; 7SP/Turn
+            </li>
+          </ol>
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Drinker of Shadows</button>
+          <div id="skill-content">
+            <p>All SPIRIT damage dealt by Penumbral Stalker is converted into SPIRIT for the Host.</p>
           </div>
         </div>
-        <div class="ability-list">
-          <div class="abilities" style="padding-top: 0px">
-            <table>
-              <tr>
-                <th style="text-align: left; font-size: 20px">
-                  Drinker of Shadows
-                </th>
-              </tr>
-              <tr>
-                <td>
-                  All SPIRIT damage dealt by Penumbral Stalker is converted into
-                  SPIRIT for the Host.
-                </td>
-              </tr>
-            </table>
-          </div>
-          <div class="abilities">
-            <table>
-              <tr>
-                <th style="text-align: left; font-size: 20px">
-                  Eclipsed Slash
-                </th>
-              </tr>
-              <tr>
-                <td>
-                  Make a melee attack against a creature within 5ft range,
-                  attack roll +WIS + Host PB. On hit, the creature takes 1d8+WIS
-                  psychic damage.
-                </td>
-              </tr>
-            </table>
-          </div>
-          <div class="abilities">
-            <table>
-              <tr>
-                <th style="text-align: left; font-size: 20px">
-                  Abyssal Plunge [8SP]
-                </th>
-              </tr>
-              <tr>
-                <td>
-                  Choose a creature within its movement speed range, move
-                  towards the creature and make an attack roll. Rising up high,
-                  and plunging itself straight into the ground into the shadows,
-                  Penumbral Stalker rends away at the creature, dealing 2d8+WIS
-                  psychic damage. This ability targets SPIRIT DEF instead of AC.
-                  When using this ability, host and Penumbral Stalker gain +5
-                  SPIRIT DEF for the next attack that targets SPIRIT DEF or
-                  until the end of their next turns, whichever comes first.
-                </td>
-              </tr>
-            </table>
-          </div>
-          <div class="abilities">
-            <table>
-              <tr>
-                <th style="text-align: left; font-size: 20px">
-                  Draconic Shadow
-                </th>
-              </tr>
-              <tr>
-                <td>
-                  Creatures that take damage from Penumbral Stalker have a -1 to
-                  their AC or SPIRIT DEF until the end of their next turn.
-                </td>
-              </tr>
-            </table>
-          </div>
-          <div class="abilities">
-            <table>
-              <tr>
-                <th style="text-align: left; font-size: 20px">
-                  Watcher of the People (5SP/Reaction):
-                  <strong>[GUARDIAN ONLY]</strong>
-                </th>
-              </tr>
-              <tr>
-                <td>
-                  As a reaction, the Penumbral Stalker can move up to half of
-                  its movement speed to another creature. It can then increase
-                  the creatures AC by PB. for one attack.
-                </td>
-              </tr>
-            </table>
-          </div>
-          <div class="abilities">
-            <table>
-              <tr>
-                <th style="text-align: left; font-size: 20px">
-                  Castigate the Unworthy: <strong>[PUNISHER ONLY]</strong>
-                </th>
-              </tr>
-              <tr>
-                <td>
-                  The stacks of Draconic Shadow can stack up to a number of
-                  times equal to PB, and lasts one additional round.
-                </td>
-              </tr>
-            </table>
-          </div>
-          <div class="abilities">
-            <table>
-              <tr>
-                <th style="text-align: left; font-size: 20px">
-                  Serenity in Dusk: Śāma vica śāntī (14SP):
-                </th>
-              </tr>
-              <tr>
-                <td>
-                  As a main action, the Penumbral Stalker fuses with the host,
-                  forming a shadowy hand around its left, and makes a melee
-                  attack within 5ft. Regardless of the remaining SPIRIT, host
-                  will suffer the effects of SPIRIT drain until the end of their
-                  next turn. On hit, the melee attack deals PBd12+WIS psychic
-                  damage, and reduces the enemy creatures AC by 5 until the end
-                  of their next turn. Afterwards, Penumbral Stalker is
-                  unsummoned. This ability can target AC or SPIRIT DEF. <br /><i
-                    >Note: user must choose before attack</i
-                  >
-                  <br /><br />
-                  As a Penumbral Stalker AND host reaction when host takes
-                  damage, if Penumbral Stalker is within 5ft range of the host,
-                  it will take the damage for the host instead. Immediately
-                  after, the host and Penumbral Stalker will instantly initiate
-                  Serenity in Dusk as part of the same reaction. If the
-                  Penumbral Stalker was reduced to 0 hitpoints by the damage it
-                  took for the host, it will give this attack advantage. After
-                  which, the effects follows as normal and Penumbral Stalker is
-                  unsummoned.
-                </td>
-              </tr>
-              <tr>
-                <td><br />Guardian: 1<br />Punisher: 0</td>
-              </tr>
-            </table>
+
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Eclipsed Slash</button>
+          <div id="skill-content">
+            <p>Make a melee attack against a creature within 5ft range, attack roll +WIS + Host PB. On hit, the creature takes 1d8+WIS psychic damage. 
+            </p>
           </div>
         </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Abyssal Plunge (8SP)</button>
+          <div id="skill-content">
+            <p>Choose a creature within its movement speed range, move towards the creature and make an attack roll. Rising up high, and plunging itself straight into the ground into the shadows, Penumbral Stalker rends away at the creature, dealing 2d8+WIS psychic damage. Abyssal Plunge targets SPIRIT DEF instead of AC. When using Abyssal Plunge, host and Penumbral Stalker gain +5 SPIRIT DEF for next instance of SPIRIT DEF attack OR until the end of their next turns, whichever comes first.  All SP drained by Abyssal Plunge is regenerated as SP for the host
+            </p>
+          </div>
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Draconic Shadow</button>
+          <div id="skill-content">
+            <p>Creatures that take damage from Penumbral Stalker have a -1 to their AC or SPIRIT DEF until the end of their next turn.</p>
+          </div>
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Watcher of the People (5SP/Reaction) [GUARDIAN ONLY]</button>
+          <div id="skill-content">
+            <p>Creatures that take damage from Penumbral Stalker have a -1 to their AC or SPIRIT DEF until the end of their next turn.</p>
+          </div>
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Castigate the Unworthy [PUNISHER ONLY] </button>
+          <div id="skill-content">
+            <p>The stacks of Draconic Shadow can stack up to a number of times equal to PB, and lasts one additional round.</p>
+          </div>
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Serenity in Dusk: Śāma vica śāntī (7SP)</button>
+          <div id="skill-content">
+            <p>As a main action, the Penumbral Stalker fuses with the host, forming a shadowy hand around its left, and makes a melee attack within 5ft. Regardless of the remaining SPIRIT, host will suffer the effects of SPIRIT drain until the end of their next turn. On hit, the melee attack deals PBd12+WIS psychic damage, and reduces the enemy creatures AC by 5 until the end of their next turn. Afterwards, Penumbral Stalker is unsummoned. This attack can target either AC or SPIRIT DEF, user chooses before rolling</p>
+          </div>
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Ponlu Khmaw; A Soul Flashes In The Abyss</button>
+          <div id="skill-content">
+            <p>Serenity in Dusk: Śāma vica śāntī can now be used unlimited times, and consumes 1 attack instead of the whole main action, (aka can be used with extra attack), and no longer incurs SP drain. After finishing using Serenity in Dusk: Śāma vica śāntī, make a WIS save, the DC starts at 8, and slowly scales up by 2 with each use of the signature. On a fail, the signature can no longer be used. On a success, you can continue to use it. After two uses of Serenity in Dusk: Śāma vica śāntī, the third Serenity in Dusk: Śāma vica śāntī does not cost SP. 
+              <br><br>As a Penumbral Stalker AND host reaction when host takes damage, if Penumbral Stalker is within 5ft range of the host, it will take the damage for the host instead. Immediately after, the host and Penumbral Stalker will instantly initiate Serenity in Dusk as part of the same reaction. If the Penumbral Stalker was reduced to 0 hitpoints by the damage it took for the host, it will give this attack advantage. After which, the effects follows as normal and Penumbral Stalker is unsummoned.
+            </p>
+          </div>
+        </div>
+
+        <div class="host-name">
+          GUARDIAN: 1
+          <br>PUNISHER: 0
+        </div>
+
       </div>
+
     </div>
+    
+    <script>
+      $("#header").load("../../components/header.html");
+      $("#sidebar").load("../../components/sidebar.html");
+
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
   </body>
 </html>

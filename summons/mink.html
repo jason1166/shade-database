@@ -4,108 +4,115 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../script.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <title>Abyssal Mink</title>
   </head>
   <body>
-    <div class="data-container">
-      <div class="name" style="margin-bottom: 20px">ABYSSAL MINK</div>
-      <div class="content">
-        <div class="image-and-stats">
-          <div>
-            <img
-              src="../images/summon-mink.jpg"
-              alt="Abyssal Mink"
-              class="image"
-              height="350px"
-              width="350px"
-            />
-          </div>
-          <div class="stats">
-            <table>
-              <tr>
-                <td>HP:</td>
-                <td>1 x host Proficiency Bonus</td>
-              </tr>
-              <tr>
-                <td>AC:</td>
-                <td>16</td>
-              </tr>
-              <tr>
-                <td>SPD:</td>
-                <td>30ft</td>
-              </tr>
-            </table>
+    <div id="main">
+      <div class="data-container">
+        <div class="name">
+          ABYSSAL MINK
+        </div>
+        <div class="stats">
+          <ol style="list-style-type: none;">
+            <li>
+              HP:&emsp;1 x Proficiency Bonus
+            </li>
+            <li>
+              AC:&emsp;16
+            </li>
+            <li>
+              SPD:&emsp;30
+            </li>
+            <li>
+              COST:&emsp;2SP/Turn
+            </li>
+          </ol>
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Squirrely</button>
+          <div id="skill-content">
+            <p>Advantage on DEX saves, and does not take any damage when successfully saving.</p>
           </div>
         </div>
-        <div class="ability-list">
-          <div class="abilities" style="padding-top: 0px">
-            <table>
-              <tr>
-                <th style="text-align: left; font-size: 20px">Squirrely</th>
-              </tr>
-              <tr>
-                <td>
-                  Advantage on DEX saves, and does not take any damage when
-                  successfully saving
-                </td>
-              </tr>
-            </table>
-          </div>
-          <div class="abilities">
-            <table>
-              <tr>
-                <th style="text-align: left; font-size: 20px">Stalk Prey</th>
-              </tr>
-              <tr>
-                <td>
-                  Select a target within line of sight and 30ft, the next melee
-                  attack against the character from an allied that is also
-                  within Abyssal Mink's line of sight, the character gains
-                  advantage on that roll.
-                </td>
-              </tr>
-            </table>
-          </div>
-          <div class="abilities">
-            <table>
-              <tr>
-                <th style="text-align: left; font-size: 20px">
-                  Predatory Strike
-                </th>
-              </tr>
-              <tr>
-                <td>
-                  Attack roll+PB+Host WIS 5FT range, deals 1d4 magical physical
-                  damage. If the target has Stalk Prey, the attack ignores
-                  resistances.
-                </td>
-              </tr>
-            </table>
-          </div>
-          <div class="abilities">
-            <table>
-              <tr>
-                <th style="text-align: left; font-size: 20px">
-                  Expose Weakness [3SP]
-                </th>
-              </tr>
-              <tr>
-                <td>
-                  Mink raises its quills and makes a 30ft ranged attack +
-                  proficiency bonus +Host WIS against a creature. On a
-                  successful hit, the Mink deals a 1d6+proficiency bonus damage
-                  type chosen by it's host, and the target gains vulnerability
-                  to that damage type until the end of the targets next turn. If
-                  the target has Stalk Prey, the attack ignores resistances and
-                  is rolled as pent. Regardless of whether the attack lands or
-                  not, the Mink is unsummoned and is treated as if it's killed.
-                </td>
-              </tr>
-            </table>
+
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Stalk Prey</button>
+          <div id="skill-content">
+            <p>Select a target within line of sight and 30ft, the next melee attack against the character from an allied that is also within Abyssal Mink's line of sight, the character gains advantage on that roll.</p>
           </div>
         </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Enhanced Predatory Strike</button>
+          <div id="skill-content">
+            <p>Attack roll+PB+Host WIS 5FT range, deals 1d6+PB magical physical damage. If the target has Stalk Prey, the attack ignores resistances.</p>
+          </div>
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Tail Lash</button>
+          <div id="skill-content">
+            <p>Attack roll+PB+Host WIS 5FT range. If creature has stalk prey and this attack successfully hits. the next attack roll against this creature has a +1d6 bonus.</p>
+          </div>
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Shadow Pounce (3SP)</button>
+          <div id="skill-content">
+            <p>Mink enters a shadowy state and hides within a shadow nearby, and instantly pounces from the dark and strikes at a creature within 30ft of it. This action can be held in which case it will stay within its shadowy state until the held action is released and gain's advantage on the attack. Within its shadowy state, Mink is invulnerable to damage. On a successful hit, the Mink deals a 1d6+PB damage type chosen by it's host, and the target gains vulnerability to that damage type for the next instance of damage. Regardless of whether the attack lands or not, the Mink is unsummoned and is treated as if it's killed.</p>
+          </div>
+        </div>
+
       </div>
+
     </div>
+    
+    <script>
+      $("#header").load("../../components/header.html");
+      $("#sidebar").load("../../components/sidebar.html");
+
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
   </body>
 </html>

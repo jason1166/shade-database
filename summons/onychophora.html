@@ -4,106 +4,103 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../script.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <title>Slothful Onychophora</title>
   </head>
   <body>
-    <div class="data-container">
-      <div class="name" style="margin-bottom: 20px">SLOTHFUL ONYCHOPHORA</div>
-      <div class="content">
-        <div class="image-and-stats">
-          <div>
-            <img
-              src="../images/summon-onychophora.jpg"
-              alt="Slothful Onychophora"
-              class="image"
-              height="350px"
-              width="350px"
-            />
-          </div>
-          <div class="stats">
-            <table>
-              <tr>
-                <td>HP:</td>
-                <td>1 x host Proficiency Bonus</td>
-              </tr>
-              <tr>
-                <td>AC:</td>
-                <td>8</td>
-              </tr>
-              <tr>
-                <td>SPD:</td>
-                <td>20ft</td>
-              </tr>
-            </table>
+    <div id="main">
+      <div class="data-container">
+        <div class="name">
+          SLOTHFUL ONYCHOPHORA
+        </div>
+        <div class="stats">
+          <ol style="list-style-type: none;">
+            <li>
+              HP:&emsp;1 x Proficiency Bonus
+            </li>
+            <li>
+              AC:&emsp;8
+            </li>
+            <li>
+              SPD:&emsp;20
+            </li>
+            <li>
+              COST:&emsp;2SP/Turn
+            </li>
+          </ol>
+        </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Phantom Body</button>
+          <div id="skill-content">
+            <p>The Onychophora dreading needing to actually move on its own, would rather leave its movement in completely in the hands of an allied character. The Onychophora will attach to a character to supplement a missing limb, and or missing body part. The body part cannot exceed the size of the Onychophora and body parts vital to the creatures survival can only be mimicked for a short duration, depending on the situation. Onychophorais also able to use a reaction to quickly plunge items or take out items from Infinite Abyss.</p>
           </div>
         </div>
-        <div class="ability-list">
-          <div class="abilities" style="padding-top: 0px">
-            <table>
-              <tr>
-                <th style="text-align: left; font-size: 20px">Phantom Body</th>
-              </tr>
-              <tr>
-                <td>
-                  The Onychophora dreading needing to actually move on its own,
-                  would rather leave its movement in completely in the hands of
-                  an allied character. The Onychophora will attach to a
-                  character to supplement a missing limb, and or missing body
-                  part. The body part cannot exceed the size of the Onychophora
-                  and body parts vital to the creatures survival can only be
-                  mimicked for a short duration, depending on the situation.
-                  Onychophorais also able to use a reaction to quickly plunge
-                  items or take out items from Infinite Abyss.
-                </td>
-              </tr>
-            </table>
-          </div>
-          <div class="abilities">
-            <table>
-              <tr>
-                <th style="text-align: left; font-size: 20px">
-                  Sculpt the Dark
-                </th>
-              </tr>
-              <tr>
-                <td>
-                  The Onychophora can shape shadows within 10ft, but unlike
-                  Shadow Manipulation, the shadows can be pulled from the
-                  surface to form animate objects. The animate objects created
-                  can be no larger than itself, and can only be simple objects
-                  such as chairs, dice, clubs etc. The Onychophora can control
-                  the object freely, launching it or levitating it as it wishes.
-                  Due to its cowardly nature, Onychophora will use its shadow
-                  manipulation technique to shield itself. If a character were
-                  to target specifically Onychophora with an attack roll, it
-                  will automatically use its reaction to manipulate shadows to
-                  defend itself, and increase its AC to 20 for one attack roll.
-                </td>
-              </tr>
-            </table>
-          </div>
-          <div class="abilities">
-            <table>
-              <tr>
-                <th style="text-align: left; font-size: 20px">
-                  Shadow Marionette [5SP]
-                </th>
-              </tr>
-              <tr>
-                <td>
-                  A character within 10ft must make a WIS save, on a fail, on
-                  the characters next turn, the Onychophora controls the
-                  movement but not the actions of the character. Once that
-                  characters turn ends, Onychophora is unsummoned and is treated
-                  as if its killed. If the target saves, Onychophora is
-                  instantly unsummoned and is treated as if its killed.
-                </td>
-              </tr>
-            </table>
+
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Sculpt the Dark</button>
+          <div id="skill-content">
+            <p>The Onychophora can shape shadows within 10ft, but unlike Shadow Manipulation, the shadows can be pulled from the surface to form animate objects. The animate objects created can be no larger than itself, and can only be simple objects such as chairs, dice, clubs etc. The Onychophora can control the object freely, launching it or levitating it as it wishes. Due to its cowardly nature, Onychophora will use its shadow manipulation technique to shield itself. If a character were to target specifically Onychophora with an attack roll, it will automatically use its reaction to manipulate shadows to defend itself, and increase its AC to 20 for one attack roll.
+            </p>
           </div>
         </div>
+
+        <div class="skill-tab">
+          <button type="button" class="collapsible skill-title">Shadow Marionette (5SP)</button>
+          <div id="skill-content">
+            <p>A character within 10ft must make a WIS save, on a fail, on the characters next turn, the Onychophora controls the movement but not the actions of the character. Once that characters turn ends, Onychophora is unsummoned and is treated as if its killed. If the target saves, Onychophora is instantly unsummoned and is treated as if its killed. 
+            </p>
+          </div>
+        </div>
+
       </div>
+
     </div>
+    
+    <script>
+      $("#header").load("../../components/header.html");
+      $("#sidebar").load("../../components/sidebar.html");
+
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
   </body>
 </html>

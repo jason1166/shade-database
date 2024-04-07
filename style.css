@@ -161,8 +161,9 @@ body {
 }
 
 .stats {
-  font-size: 20px;
-  color: aqua;
+  font-size: 25px;
+  color: white;
+  font-family: Bookinsanity-bold;
 }
 
 .summon-image {
@@ -173,7 +174,7 @@ body {
   font-weight: bold; 
   font-size: 22px; 
   text-decoration: none;
-  color: red;
+  color: aqua;
   font-family: Bookinsanity-bold;
 }
 
