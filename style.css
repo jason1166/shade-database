@@ -92,7 +92,7 @@ body {
   border: solid 5px white;
 }
 
-.rainbow-text {
+.rainbow-text, #color-shade:hover {
   background-image: linear-gradient(
     90deg,
     rgba(255, 0, 0, 1) 0%,
@@ -108,6 +108,7 @@ body {
     rgba(255, 0, 0, 1) 100%
   );
   background-size: 25%;
+  background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent; 
